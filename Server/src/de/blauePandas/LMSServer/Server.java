@@ -1,6 +1,7 @@
 package de.blauePandas.LMSServer;
 
 import de.blauePandas.LMSServer.control.ClientThread;
+import de.blauePandas.LMSServer.core.MySQL;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -16,9 +17,11 @@ import java.util.concurrent.Executors;
  */
 public class Server
 {
+    static MySQL mySQL  = new MySQL("org.gjt.mm.mysql.Driver", "jdbc:mysql://localhost/prgjava"); // erstellen eines "ConnectionPools"
+
     public static void main(String[] _args)
     {
-        ExecutorService executorService = Executors.newFixedThreadPool(3); // max 30 Threads gleichzeitig
+        ExecutorService executorService = Executors.newFixedThreadPool(3); // max 3 Threads gleichzeitig (zum leichteren testen später dan erhöhen ! //todo max verbindungen erhöhen)
 
         try
         {
@@ -31,8 +34,6 @@ public class Server
                 {
                     Socket client = server.accept();
                     executorService.execute(new ClientThread(client));
-
-
                 }
                 catch(IOException e)
                 {
@@ -47,3 +48,6 @@ public class Server
         }
     }
 }
+
+
+//TODO connectionpool testen

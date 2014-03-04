@@ -48,7 +48,7 @@ public class ClientThread implements Runnable
 
                     if(cmd.equalsIgnoreCase("exit"))
                     {
-                        System.out.print(Thread.currentThread().getName() + ": Verbindung getrennt");
+                        System.out.print("<<" + Thread.currentThread().getName() + ">> : Verbindung getrennt");
                         break;
                     }
 
@@ -64,7 +64,7 @@ public class ClientThread implements Runnable
 
         catch(Exception e)
         {
-            System.out.print("ClientThred -- " + e.toString());
+            System.out.print("ClientThred -- " + e.toString() + "\n");
 
             try
             {
@@ -72,7 +72,7 @@ public class ClientThread implements Runnable
             }
             catch (IOException e1)
             {
-                System.out.print("ClientThred -client.close- " + e1.toString());
+                System.out.print("ClientThred -client.close- " + e1.toString() + "\n");
             }
         }
     }
