@@ -1,6 +1,12 @@
 package de.blauePandas.LMSServer.control;
 
-import java.io.*;
+import de.blauePandas.LMSServer.control.commands.*;
+import de.blauePandas.LMSServer.model.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
 
 /**
@@ -11,7 +17,8 @@ import java.net.Socket;
  */
 public class ClientThread implements Runnable
 {
-    private Socket client;
+    private  Socket client;
+    public static Session Session = new Session();
 
     /* übergabe des Clienten */
     public ClientThread(Socket _client)
@@ -22,13 +29,16 @@ public class ClientThread implements Runnable
     @Override
     public void run()
     {
+
+        ConsoleControl ConsoleControl = new ConsoleControl();
+
+        ConsoleControl.addCmd(new EchoCommand());
+
         try
         {
-            OutputStream out = client.getOutputStream();
-            PrintWriter writer = new PrintWriter(out);
 
-            InputStream in = client.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+            PrintWriter writer = new PrintWriter(client.getOutputStream());
+            BufferedReader reader = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
             writer.write("<<"+Thread.currentThread().getName() + ">>  Verbindung zum Server ist aufgebaut\n");
             writer.flush();
@@ -43,17 +53,20 @@ public class ClientThread implements Runnable
                     String[] split  = input.split(" ");             //Sting in wird bei jeden Leerzeichen geteilt und im split gespeichert
                     String cmd      = split[0];                     //Comando extrakation
 
-                    //String[] args   = new String[split.length-1];   // restlichen eingaben
-                   // System.arraycopy(split, 1, args, 0, split.length - 1);
-
                     if(cmd.equalsIgnoreCase("exit"))
                     {
-                        System.out.print("<<" + Thread.currentThread().getName() + ">> : Verbindung getrennt");
+                        System.out.print("<<" + Thread.currentThread().getName() + ">> Verbindung getrennt");
                         break;
                     }
 
-                    writer.write(input+"\n");
+                    String[] args   = new String[split.length-1];   // restlichen eingaben
+                    System.arraycopy(split, 1, args, 0, split.length - 1);
+
+                    String msg = ConsoleControl.performCmd(cmd, args,Session.getRights());
+
+                    writer.write(msg+"\n");
                     writer.flush();
+
                     System.out.println("<<" + Thread.currentThread().getName() + ">> "+ input);
                 }
             }

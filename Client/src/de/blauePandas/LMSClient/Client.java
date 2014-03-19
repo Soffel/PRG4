@@ -1,6 +1,7 @@
 package de.blauePandas.LMSClient;
 
-import de.blauePandas.LMSClient.control.*;
+import de.blauePandas.LMSClient.control.InputThread;
+import de.blauePandas.LMSClient.control.OutputThread;
 
 import java.net.Socket;
 

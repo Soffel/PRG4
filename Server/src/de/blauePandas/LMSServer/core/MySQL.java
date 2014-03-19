@@ -1,7 +1,7 @@
 package de.blauePandas.LMSServer.core;
 
 import java.sql.*;
-import java.util.*;
+import java.util.Vector;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,14 +14,24 @@ import java.util.*;
 public class MySQL
 {
     Vector <Pool> pools   = new Vector<Pool>();
-    String sqlDriver      = null;
-    String sqlDatabase    = null;
+    String sqlDriver      = "com.mysql.jdbc.Driver";
+    String sqlDatabase    = "jdbc:mysql://";
+    String sqlUser        = "root";         //sql username
+    String sqlPsw         = "";             //sql userpasswort
 
 
-    public MySQL(String _sqlDriver, String _sqlDatabase)
+    public MySQL(String _sqlDatabaseUrl)
     {
-        this.sqlDriver      = _sqlDriver;
-        this.sqlDatabase    = _sqlDatabase;
+
+        this.sqlDatabase    = this.sqlDatabase + _sqlDatabaseUrl;
+    }
+
+
+    public MySQL(String _sqlDatabaseUrl, String _sqlUser, String _sqlPsw)
+    {
+        this.sqlDatabase    = this.sqlDatabase + _sqlDatabaseUrl;
+        this.sqlUser        = _sqlUser;
+        this.sqlPsw         = _sqlPsw;
     }
 
 
@@ -45,11 +55,11 @@ public class MySQL
         {
             Class.forName(this.sqlDriver);
 
-            connection = DriverManager.getConnection(this.sqlDatabase);
+            connection = DriverManager.getConnection(this.sqlDatabase,this.sqlUser,this.sqlPsw);
         }
         catch (Exception e)
         {
-            e.printStackTrace();
+            System.out.println("mysql -- "+ e.toString());
             return null;
         }
 
