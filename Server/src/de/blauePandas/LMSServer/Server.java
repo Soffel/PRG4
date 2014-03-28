@@ -25,6 +25,7 @@ public class Server
 {
     public static MySQL mySQL  = new MySQL("localhost/prgjava","root",""); // erstellen eines "ConnectionPools"
 
+    private static boolean run = true;
 
     public static void main(String[] _args)
     {
@@ -34,11 +35,6 @@ public class Server
         {
             ServerSocket server = new ServerSocket(12345);
             System.out.println("Server gestartet!");
-
-            Person person = new Person();
-
-            person.login();
-
 
             while(true)
             {
@@ -51,6 +47,12 @@ public class Server
                 {
                     System.out.println("Server -inWhileschleife- " + e.toString());
                 }
+
+                if(!run)
+                {
+                    System.out.println("Server wird beendet");
+                    break;
+                }
             }
         }
         catch (IOException e)
@@ -61,4 +63,3 @@ public class Server
 }
 
 
-//TODO connectionpool testen

@@ -34,13 +34,16 @@ public class OutputThread implements Runnable
 
                 if(!output.isEmpty())
                 {
-                    if(output.equalsIgnoreCase("exit"))
+                    if(output.equalsIgnoreCase("stop"))
                     {
+                        System.out.println("Client wird beendet.");
+
                         break;
                     }
-                    System.out.println(output);
+                    System.out.print(output+"\n>>");
                 }
             }
+            //todo client sauber beenden
             reader.close();
             client.close();
         }

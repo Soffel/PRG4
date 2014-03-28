@@ -18,7 +18,7 @@ import java.net.Socket;
 public class ClientThread implements Runnable
 {
     private  Socket client;
-    public static Session Session = new Session();
+
 
     /* übergabe des Clienten */
     public ClientThread(Socket _client)
@@ -48,21 +48,26 @@ public class ClientThread implements Runnable
             {
                 String input = reader.readLine();
 
+
                 if(!input.isEmpty())
                 {
+
+
                     String[] split  = input.split(" ");             //Sting in wird bei jeden Leerzeichen geteilt und im split gespeichert
                     String cmd      = split[0];                     //Comando extrakation
 
-                    if(cmd.equalsIgnoreCase("exit"))
+                    String[] args   = new String[split.length-1];   // restlichen eingaben
+                    System.arraycopy(split, 1, args, 0, split.length - 1);
+
+                    if(cmd.equalsIgnoreCase("stop"))
                     {
                         System.out.print("<<" + Thread.currentThread().getName() + ">> Verbindung getrennt");
                         break;
                     }
 
-                    String[] args   = new String[split.length-1];   // restlichen eingaben
-                    System.arraycopy(split, 1, args, 0, split.length - 1);
 
-                    String msg = ConsoleControl.performCmd(cmd, args,Session.getRights());
+
+                    String msg = ConsoleControl.performCmd(cmd, args,1);//todo rights
 
                     writer.write(msg+"\n");
                     writer.flush();

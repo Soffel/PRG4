@@ -16,6 +16,8 @@ public class InputThread implements Runnable
 {
     private Socket client;
 
+
+
     public InputThread(Socket _client)
     {
         this.client = _client;
@@ -42,8 +44,10 @@ public class InputThread implements Runnable
                     writer.write(input + "\n"); //übergabe an server
                     writer.flush();             //abschicken
 
-                    if(cmd.equalsIgnoreCase("exit"))
+                    if(cmd.equalsIgnoreCase("stop"))
                     {
+                        System.out.println("Client wird beendet.");
+
                       break;
                     }
                 }
@@ -54,6 +58,7 @@ public class InputThread implements Runnable
 
         catch(Exception e)
         {
+
             System.out.println("InputThread -- " + e.toString());
 
         }
