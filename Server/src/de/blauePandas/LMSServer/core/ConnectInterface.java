@@ -1,7 +1,5 @@
 package de.blauePandas.LMSServer.core;
 
-import java.sql.ResultSet;
-
 /**
  * Created with IntelliJ IDEA.
  * Team: blaue Pandas
@@ -12,13 +10,5 @@ import java.sql.ResultSet;
 
 public interface ConnectInterface
 {
-    /**
-     *Datenbankzugriff ohne rückgabe (update, insert, delete)
-     **/
-    public void doThis(String _sql, String[] _args)throws Exception;
 
-    /**
-     *Datenbankzugriff mit rückgabe (insert)
-     **/
-    public ResultSet doThisAndResult(String _sql, String[] _args)throws Exception;
 }

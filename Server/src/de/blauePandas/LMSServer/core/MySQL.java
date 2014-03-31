@@ -1,8 +1,7 @@
 package de.blauePandas.LMSServer.core;
 
-import de.blauePandas.LMSServer.functions.IsNumberFunction;
-
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.Vector;
 
 /**
@@ -13,7 +12,7 @@ import java.util.Vector;
  */
 
 
-public class MySQL extends IsNumberFunction implements ConnectInterface
+public class MySQL implements ConnectInterface
 {
     Vector <Pool> pools   = new Vector<Pool>();
     String sqlDriver      = "com.mysql.jdbc.Driver";
@@ -92,37 +91,5 @@ public class MySQL extends IsNumberFunction implements ConnectInterface
         }
     }
 
-
-    @Override
-    public void doThis(String _sql, String[] _args)throws Exception
-    {
-        Connection connection = this.getConnection();
-        PreparedStatement statement = connection.prepareStatement(_sql);
-
-
-        for (int index = 0; index < _args.length; index++) {
-
-            if(!isNumber(_args[index]))
-            {
-                statement.setString(index+1,_args[index]);
-                System.out.println("string");
-            }
-            else
-            {
-                statement.setInt(4, Integer.parseInt(_args[index]));
-                System.out.println("int");
-            }
-        }
-
-        statement.execute();
-        statement.close();
-        this.closeConnection(connection);
-    }
-
-    @Override
-    public ResultSet doThisAndResult(String _sql, String[] _args)throws Exception
-    {
-        return null;
-    }
 }
 

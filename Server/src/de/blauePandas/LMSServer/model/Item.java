@@ -6,5 +6,6 @@ package de.blauePandas.LMSServer.model;
  * User: Andre Wagenknecht
  * Date: 27.02.14
  */
-public class Item {
+public class Item
+{
 }

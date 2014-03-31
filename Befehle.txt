@@ -1,4 +1,1 @@
 echo <input> -> gibt input zurück
-
-stop -> beendet Client
-     -Server / -s -> beendet Server
