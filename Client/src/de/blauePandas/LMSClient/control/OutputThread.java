@@ -23,10 +23,13 @@ public class OutputThread implements Runnable
     @Override
     public void run()
     {
+        InputStream input = null;
+        BufferedReader reader = null;
+
         try
         {
-            InputStream input = this.client.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+             input = this.client.getInputStream();
+             reader = new BufferedReader(new InputStreamReader(input));
 
             while(true)
             {
@@ -36,20 +39,38 @@ public class OutputThread implements Runnable
                 {
                     if(output.equalsIgnoreCase("stop"))
                     {
-                        System.out.println("Client wird beendet.");
-
                         break;
                     }
+
                     System.out.print(output+"\n>>");
                 }
             }
-            //todo client sauber beenden
-            reader.close();
-            client.close();
         }
         catch(Exception e)
         {
-            System.out.println("OutputThred -- " + e.toString());
+            //System.out.println("OutputThred -- " + e.toString());
+            System.out.println("Client wurde beendet");
+        }
+        finally
+        {
+            try
+            {
+                if(reader != null)
+                {
+                    reader.close();
+                }
+
+                if(input != null)
+                {
+                    input.close();
+                }
+
+                client.close();
+            }
+            catch (Exception e)
+            {
+                System.out.println("OutputThred -finally- " + e.toString());
+            }
         }
     }
 }

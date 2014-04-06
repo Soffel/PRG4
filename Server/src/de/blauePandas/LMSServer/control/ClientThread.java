@@ -1,7 +1,7 @@
 package de.blauePandas.LMSServer.control;
 
-import de.blauePandas.LMSServer.control.commands.*;
-import de.blauePandas.LMSServer.model.*;
+import de.blauePandas.LMSServer.control.commands.EchoCommand;
+import de.blauePandas.LMSServer.control.commands.StopCommand;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,6 +26,13 @@ public class ClientThread implements Runnable
         this.client = _client;
     }
 
+    public static void StopClient()
+    {
+        clientStop = true;
+    }
+
+    private static boolean clientStop = false;
+
     @Override
     public void run()
     {
@@ -33,6 +40,7 @@ public class ClientThread implements Runnable
         ConsoleControl ConsoleControl = new ConsoleControl();
 
         ConsoleControl.addCmd(new EchoCommand());
+        ConsoleControl.addCmd(new StopCommand()); //todo sobald rechte verwaltung steht entfernen
 
         try
         {
@@ -59,15 +67,13 @@ public class ClientThread implements Runnable
                     String[] args   = new String[split.length-1];   // restlichen eingaben
                     System.arraycopy(split, 1, args, 0, split.length - 1);
 
-                    if(cmd.equalsIgnoreCase("stop"))
+                    String msg = ConsoleControl.performCmd(cmd, args,1);//todo rights
+
+                    if(clientStop)
                     {
                         System.out.print("<<" + Thread.currentThread().getName() + ">> Verbindung getrennt");
                         break;
                     }
-
-
-
-                    String msg = ConsoleControl.performCmd(cmd, args,1);//todo rights
 
                     writer.write(msg+"\n");
                     writer.flush();
@@ -83,6 +89,7 @@ public class ClientThread implements Runnable
         catch(Exception e)
         {
             System.out.print("ClientThred -- " + e.toString() + "\n");
+
 
             try
             {
