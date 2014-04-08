@@ -1,7 +1,7 @@
 package de.blauePandas.LMSServer;
 
 import de.blauePandas.LMSServer.control.ClientThread;
-import de.blauePandas.LMSServer.core.MySQL;
+import de.blauePandas.LMSServer.core.ConnectionPool;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -22,8 +22,8 @@ import java.util.concurrent.Executors;
  */
 public class Server
 {
-    public static MySQL mySQL  = new MySQL("localhost/prgjava","root",""); // erstellen eines "ConnectionPools"
-
+    public static ConnectionPool mySQL  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
+    
     public static void main(String[] _args)
     {
         ServerSocket server = null;
