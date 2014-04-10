@@ -14,14 +14,14 @@ import java.util.Scanner;
 
 public class InputThread implements Runnable
 {
-    private Socket client;
-
+    private Socket client = null;
 
 
     public InputThread(Socket _client)
     {
         this.client = _client;
     }
+
 
     @Override
     public void run()
@@ -36,29 +36,26 @@ public class InputThread implements Runnable
             writer  = new PrintWriter(output);
             eingabe = new Scanner(System.in);
 
-            while(true)
+            while (true)
             {
                 String input = eingabe.nextLine();
 
-                if(!input.isEmpty())
+                if (!input.isEmpty())
                 {
                     String[] split  = input.split(" ");             //String in wird bei jeden Leerzeichen geteilt und im split gespeichert
                     String cmd      = split[0];                     //Comando extrakation
 
-
-
                     writer.write(input + "\n"); //übergabe an server
                     writer.flush();             //abschicken
 
-                if(cmd.equalsIgnoreCase("stop"))
-                {
-
-                    break;
-                }
+                    if (cmd.equalsIgnoreCase("stop"))
+                    {
+                        break;
+                    }
                 }
             }
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             System.out.println("InputThread -- " + e.toString());
         }
@@ -71,23 +68,25 @@ public class InputThread implements Runnable
                     output.close();
                 }
 
-                if(eingabe != null)
+                if (eingabe != null)
                 {
                     eingabe.close();
                 }
 
-                if(writer != null)
+                if (writer != null)
                 {
                     writer.close();
                 }
 
-                client.close();
+                if (client != null)
+                {
+                    client.close();
+                }
             }
             catch (Exception e)
             {
                 System.out.println("InputThread -finally- " + e.toString());
             }
-
         }
     }
 }

@@ -19,10 +19,12 @@ public class Client
         try
         {
             Socket client = new Socket("localhost", 12345 );
+
             System.out.println("Client gestartet");
 
-            InputThread input   =  new InputThread(client);
+            InputThread input   = new InputThread(client);
             OutputThread output = new OutputThread(client);
+
             new Thread(input).start();
             new Thread(output).start();
         }

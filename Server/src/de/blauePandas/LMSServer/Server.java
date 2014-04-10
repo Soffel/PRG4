@@ -22,8 +22,14 @@ import java.util.concurrent.Executors;
  */
 public class Server
 {
+    /**
+     * SQL-exception while adding connection to pool:
+     * java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost/PRG4
+     */
+
     public static ConnectionPool mySQL  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
-    
+
+
     public static void main(String[] _args)
     {
         ServerSocket server = null;
@@ -36,19 +42,19 @@ public class Server
 
             System.out.println("Server gestartet!");
 
-            while(true)
+            while (true)
             {
                 try
                 {
                     Socket client = server.accept();
                     executorService.execute(new ClientThread(client));
                 }
-                catch(IOException e)
+                catch (IOException e)
                 {
                     System.out.println("Server -inWhileschleife- " + e.toString());
                 }
 
-                if(false)//todo clean server stop
+                if (false)//todo clean server stop
                 {
                     System.out.println("Server wird beendet!");
                     break;
@@ -79,8 +85,6 @@ public class Server
             }
         }
     }
-
-
 }
 
 

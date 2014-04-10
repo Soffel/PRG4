@@ -14,30 +14,27 @@ public class ConsoleControl
 {
     private ArrayList<ConsoleCommandInterface> listOfCommands = new ArrayList <ConsoleCommandInterface>();
 
-    private static final String MSG_INFO =   "  [-INFO-]  ";
-    private static final String MSG_WARN =   "  [-WARN-]  ";
-    private static final String MSG_ERROR =  "  [-ERROR-] ";
+    private static final String MSG_INFO =   "[-INFO-]  ";
+    private static final String MSG_WARN =   "[-WARN-]  ";
+    private static final String MSG_ERROR =  "[-ERROR-] ";
 
 
     public void addCmd(final ConsoleCommandInterface _cmd)//neues Commando hinzufügen
     {
-        if(_cmd != null)//prüfen das comando nicht null ist
+        if (_cmd != null && !_cmd.getComand().isEmpty() )//prüfen das comando nicht null ist
         {
-            if(!_cmd.getComand().isEmpty())//prüfen ob im cmd leer ist
-            {
-                this.listOfCommands.add(_cmd);  //cmd hinzufügen
-            }
+            this.listOfCommands.add(_cmd);  //cmd hinzufügen
         }
     }
 
 
-    public  void removeCmd(final String _cmd)// Comando löschen
+    public void removeCmd(final String _cmd)// Comando löschen
     {
-        if(!_cmd.isEmpty())
+        if (!_cmd.isEmpty())
         {
-            for(int index = 1; index < this.listOfCommands.size(); index++)//das zu löschende comando in arraylist suchen
+            for (int index = 1; index < this.listOfCommands.size(); index++)//das zu löschende comando in arraylist suchen
             {
-                if(this.listOfCommands.get(index).getComand().equalsIgnoreCase(_cmd))//wen gefunden
+                if (this.listOfCommands.get(index).getComand().equalsIgnoreCase(_cmd))//wen gefunden
                 {
                     this.listOfCommands.remove(index);    //dan löschen
                 }
@@ -48,11 +45,11 @@ public class ConsoleControl
 
     public boolean existCmd(final String _cmd)  //prüfen ob befehl existiert
     {
-        if(!_cmd.isEmpty())//wen _Cmd nicht leer
+        if (!_cmd.isEmpty())//wen _Cmd nicht leer
         {
-            for(ConsoleCommandInterface ccmd : this.listOfCommands)//Array durchlaufen & befehl raushohlen
+            for (ConsoleCommandInterface ccmd : this.listOfCommands)//Array durchlaufen & befehl raushohlen
             {
-                if(ccmd.getComand().equalsIgnoreCase(_cmd))//überprüfen ob cmds gleich sind
+                if (ccmd.getComand().equalsIgnoreCase(_cmd))//überprüfen ob cmds gleich sind
                 {
                     return true; // ja es existiert
                 }
@@ -65,12 +62,11 @@ public class ConsoleControl
 
     public ConsoleCommandInterface getCmd(final String _cmd)
     {
-        if(existCmd(_cmd))
+        if (existCmd(_cmd))
         {
-            for(ConsoleCommandInterface ccmd : this.listOfCommands)//Array mit Comandos durchlaufen
+            for (ConsoleCommandInterface ccmd : this.listOfCommands)//Array mit Comandos durchlaufen
             {
-
-                if(ccmd.getComand().equalsIgnoreCase(_cmd))//wen Befehl gefunden
+                if (ccmd.getComand().equalsIgnoreCase(_cmd))//wen Befehl gefunden
                 {
                     return ccmd;          //gespeicherten befehl ausgeben ( kann ma auch mit eingegebenen machen, aber ist eig egal)
                 }
@@ -82,19 +78,11 @@ public class ConsoleControl
 
     public String performCmd(final String _cmd, final String[] _args, final int _rights)// eigegebenes Comando ausführen
     {
-        if(existCmd(_cmd)) //prüfen ob existiert(siehe weiter oben)
+        if (existCmd(_cmd) && this.getCmd(_cmd)!= null ) //prüfen ob existiert(siehe weiter oben)
         {
-            if(this.getCmd(_cmd)!= null)
-            {
-                ConsoleCommandInterface  cmdDo = this.getCmd(_cmd);
-                return cmdDo.execute(_args, _rights);  //befehl ausführen
-            }
+            ConsoleCommandInterface  cmdDo = this.getCmd(_cmd);
+            return cmdDo.execute(_args, _rights);  //befehl ausführen
         }
-        return MSG_ERROR+" Command '" + _cmd + "' not found";
+        return MSG_ERROR  +" Command '" + _cmd + "' not found";
     }
-
-
-
-
-
 }

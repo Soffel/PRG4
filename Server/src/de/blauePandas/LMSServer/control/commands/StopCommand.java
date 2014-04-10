@@ -16,11 +16,13 @@ public class StopCommand implements  ConsoleCommandInterface
         return "Stop";
     }
 
+
     @Override
     public String getComand()
     {
         return "stop";
     }
+
 
     @Override
     public int getRight()
@@ -28,12 +30,13 @@ public class StopCommand implements  ConsoleCommandInterface
         return 0;
     }
 
+
     @Override
     public String execute(String[] _args, int _rights)
     {
-        if(_args.length > 0)
+        if (_args.length > 0)
         {
-            if(_args[0].equalsIgnoreCase("-Server") || _args[0].equalsIgnoreCase("-S"))
+            if (_args[0].equalsIgnoreCase("-Server") || _args[0].equalsIgnoreCase("-S"))
             {
                 return "Server  gestoppt";
             }

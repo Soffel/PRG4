@@ -42,7 +42,7 @@ public class OutputThread implements Runnable
                         break;
                     }
 
-                    System.out.print(output+"\n>>");
+                    System.out.print(output+"\n>> ");
                 }
             }
         }

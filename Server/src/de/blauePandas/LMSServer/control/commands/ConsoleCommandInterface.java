@@ -16,5 +16,4 @@ public interface ConsoleCommandInterface
     public int      getRight();                 //Welche Rechte werden benötigt?
 
     public String execute(final String[] _args, final int _rights);     //das soll gemacht werden wen das comando eingegeben wird
-
 }

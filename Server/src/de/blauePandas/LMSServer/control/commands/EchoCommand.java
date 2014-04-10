@@ -14,17 +14,20 @@ public class EchoCommand implements ConsoleCommandInterface
         return "Echo";
     }
 
+
     @Override
     public String getComand()
     {
         return "echo";
     }
 
+
     @Override
     public int getRight()
     {
         return 0;
     }
+
 
     @Override
     public String execute(String[] _args, int _rights)
@@ -42,6 +45,4 @@ public class EchoCommand implements ConsoleCommandInterface
         }
         return this.getName() + " benötigt ein Argument!";
     }
-
-
 }
