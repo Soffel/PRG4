@@ -7,7 +7,7 @@ import java.sql.Connection;
  * 
  * represents a single connection from a pool of connections
  */
-public class DBConnection implements ConnectionInterface {
+public class DBConnection {
     Connection Data = null;
     boolean inUse = false;
 
@@ -21,20 +21,5 @@ public class DBConnection implements ConnectionInterface {
         this.inUse      = _inUse;
         
     } // constructor 2
-
-    // todo
-    @Override public void prepare(String _Stmt) {
-    } // prepare
-    
-    // todo
-    @Override public void bind(int i, String _param) {
-    } // bind
-    
-    // todo
-    @Override public String execute() {
-        String result = null;
-        
-        return result;
-    } // execute
     
 } // DBConnection

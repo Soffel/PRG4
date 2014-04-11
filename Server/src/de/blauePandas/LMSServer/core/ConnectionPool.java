@@ -1,6 +1,7 @@
 package de.blauePandas.LMSServer.core;
 
-import java.sql.Connection;
+import java.sql.*; // failsafe
+//import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
 
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 
 public class ConnectionPool {
     
-    static ConnectionPool Instance = null;
+    static ConnectionPool OpenInstance = null;
     
     final String dburl = "jdbc:mysql://"+localhost_connector._HOSTNAME_;
     final String user = localhost_connector._USERNAME_;
@@ -21,14 +22,19 @@ public class ConnectionPool {
     
     ArrayList<DBConnection> ConnectionList = new ArrayList();
     
-    private ConnectionPool() { // singleton --> private constructor
+    public ConnectionPool() { // singleton --> private constructor
         this.addConnection(false);
     } // constructor
     
     public static ConnectionPool getInstance() {
-        if(Instance == null) Instance = new ConnectionPool();
-        return Instance;        
+        if(OpenInstance == null) OpenInstance = new ConnectionPool();
+        return OpenInstance;        
     } // getInstance
+    
+    // abandon an instance, waiting for remaining connections to close
+    // (and then... for the garbage collector. ;] )
+    public void closeInstance() {
+    }
     
     // adds and returns a new connection to the pool, flags as in-use if _inUse argument is true
     private Connection addConnection(boolean _inUse) {
@@ -67,7 +73,7 @@ public class ConnectionPool {
     } // getConnection
     
     // unsets the inUse-marker. Use with caution!
-    public void closeConnection(Connection _connection) {
+    public void storeConnection(Connection _connection) {
         
         for(int i = 0; i < this.ConnectionList.size(); i++) {
             if(this.ConnectionList.get(i).Data == _connection) { // connection found
@@ -75,7 +81,7 @@ public class ConnectionPool {
                 break;
             } // if
         } // for
-    } // freeConnection
+    } // closeConnection
     
 } // class ConnectionPool
 
