@@ -1,14 +1,12 @@
-/*
- * database-interface implementation class
- */
+
 
 package de.blauePandas.LMSServer.core;
 
-import java.sql.Connection; // failsafe
-// import java.sql.ResultSet;
+import java.sql.Connection;
 
 /**
- *
+ * MySQL-implementation for ConnectionInterface
+ * 
  * @author havoc
  */
 public class database implements ConnectionInterface {
@@ -88,7 +86,7 @@ public class database implements ConnectionInterface {
     
     
     // todo
-    @Override public String execute() {
+    @Override public String[] execute() {
         
         String result;
         java.sql.ResultSet results;
@@ -100,6 +98,7 @@ public class database implements ConnectionInterface {
             System.out.println("SQL-Error while trying to execute statement \""+this.stmt+"\":");
             System.out.println(e.toString());
         }
+        
         // todo: loop through resultset to get output
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     

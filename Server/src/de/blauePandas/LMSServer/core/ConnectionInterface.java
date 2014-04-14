@@ -13,17 +13,32 @@ public interface ConnectionInterface {
     // grrr; damn Java 7 won't let me do static interface functions -.-
     
     // opens a connection
-    public void openConnection();
+
+    /**
+     * opens the connection to the database
+     */
+        public void openConnection();
     
     // prepares a statement (+binds arguments)
+
+    /**
+     * prepares a statement for the database
+     * 
+     * @param _Stmt the statement to be prepared
+     */
     public void prepare(String _Stmt);
     public void prepare(String _Stmt, String[] _args);
     public void prepare(String _Stmt, int arg);
     public void prepare(String _Stmt, int[] args);
     
-    // executes the statement
-    public String execute();
+    /**
+     * 
+     * @return the result of the db-query as a string
+     */
+    public String[] execute();
     
-    // puts a no longer needed connection on hold
+    /**
+     * puts a (atm) no longer needed connection on "hold"
+     */
     public void storeConnection();
 } // ConnectionInterface

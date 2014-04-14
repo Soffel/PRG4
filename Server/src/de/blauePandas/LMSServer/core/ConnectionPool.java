@@ -22,22 +22,41 @@ public class ConnectionPool {
     
     ArrayList<DBConnection> ConnectionList = new ArrayList();
     
-    public ConnectionPool() {
+    /**
+     * constructor private - use ConnectionPool.getInstance(); 
+     */
+    private ConnectionPool() {
         this.addConnection(false);
     } // constructor
     
+    /**
+     * creates a ConnectionPool if no open one is there,
+     * returns it (or the open one that was there)
+     * 
+     * @return an open ConnectionPool
+     */
     public static ConnectionPool getInstance() {
         if(OpenInstance == null) OpenInstance = new ConnectionPool();
         return OpenInstance;
     } // getInstance
     
-    // abandon an instance, waiting for remaining connections to close
-    // (and then... for the garbage collector. ;] )
+    /**
+     * "abandon" a pool, waiting for remaining connections to close
+     * (and then... for the garbage collector. ;] )
+     * caution: possible to generate memory-leak
+     */
     public void closeInstance() {
+        ConnectionPool.OpenInstance = null;
     }
     
-    // adds and returns a new connection to the pool, flags as in-use if _inUse argument is true
-    private Connection addConnection(boolean _inUse) {
+    /**
+     * adds a new connection to the pool, 
+     * flags as in-use if _inUse argument is true
+     * 
+     * @return the added connection if _inUse = true; else null
+     * @param _inUse true if you want to directly use (&return) the connection
+     */
+     private Connection addConnection(boolean _inUse) {
         Connection newConnection = null;
         
         try {
@@ -61,7 +80,12 @@ public class ConnectionPool {
         else return null;
     } // addConnection
     
-    // returns a connection from the pool, marking it as in-use
+    /**
+     * picks an unused connection from the pool,
+     * marks it as in-use
+     * 
+     * @return a connection
+     */
     public Connection getConnection() {
         Connection freeConnection = null;
         
@@ -81,7 +105,13 @@ public class ConnectionPool {
         return freeConnection;
     } // getConnection
     
-    // unsets the inUse-marker. Use with caution!
+    /**
+     * unsets the inUse-marker. 
+     * Use with caution!
+     * Be sure to remove all pointers to the connection!
+     * 
+     * @param _connection the connection to be stored
+     */
     public void storeConnection(Connection _connection) {
         
         for(int i = 0; i < this.ConnectionList.size(); i++) {
@@ -97,7 +127,6 @@ public class ConnectionPool {
 /*
  * todo:
  * - check for broken connections when trying to use them
- *
  *
 */
 
