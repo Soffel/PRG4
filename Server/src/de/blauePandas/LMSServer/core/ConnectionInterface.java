@@ -24,6 +24,6 @@ public interface ConnectionInterface {
     // executes the statement
     public String execute();
     
-    // closes the connection
+    // puts a no longer needed connection on hold
     public void storeConnection();
 } // ConnectionInterface

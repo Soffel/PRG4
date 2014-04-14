@@ -9,7 +9,7 @@ import java.util.ArrayList;
  *
  * @author havoc
  * 
- * singleton; manages database-connections, provides methods for access by DBMgr
+ * manages database-connections, provides methods for access by database
  */
 
 public class ConnectionPool {
@@ -28,7 +28,7 @@ public class ConnectionPool {
     
     public static ConnectionPool getInstance() {
         if(OpenInstance == null) OpenInstance = new ConnectionPool();
-        return OpenInstance;        
+        return OpenInstance;
     } // getInstance
     
     // abandon an instance, waiting for remaining connections to close
@@ -97,9 +97,8 @@ public class ConnectionPool {
 /*
  * todo:
  * - check for broken connections when trying to use them
- * - remove connections from pool
  *
- * - 
+ *
 */
 
 // String sqlDriver      = "com.mysql.jdbc.Driver";

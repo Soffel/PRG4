@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * database-interface implementation class
  */
 
 package de.blauePandas.LMSServer.core;
@@ -20,7 +18,7 @@ public class database implements ConnectionInterface {
     java.sql.PreparedStatement stmt; 
 
     // would love to get rid of constructor by making prepare and execute static,
-    // but would need Java 8 for that
+    // but would need Java 8 for that, only have Java 7 here
     public database() {
         this.pool = ConnectionPool.getInstance();
         this.connection = null;

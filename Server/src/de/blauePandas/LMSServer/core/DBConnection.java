@@ -5,7 +5,8 @@ import java.sql.Connection;
 /**
  * @author havoc
  * 
- * represents a single connection from a pool of connections
+ * represents a single connection from a pool of connections.
+ * doesn't really do anything on its own
  */
 public class DBConnection {
     Connection Data = null;
