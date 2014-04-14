@@ -15,14 +15,14 @@ import java.util.ArrayList;
 public class ConnectionPool {
     
     static ConnectionPool OpenInstance = null;
-    
+    String sqlDriver = "com.mysql.jdbc.Driver";
     final String dburl = "jdbc:mysql://"+localhost_connector._HOSTNAME_;
     final String user = localhost_connector._USERNAME_;
     final String pswd = localhost_connector._PASSWORD_;
     
     ArrayList<DBConnection> ConnectionList = new ArrayList();
     
-    public ConnectionPool() { // singleton --> private constructor
+    public ConnectionPool() {
         this.addConnection(false);
     } // constructor
     
@@ -41,12 +41,21 @@ public class ConnectionPool {
         Connection newConnection = null;
         
         try {
+            // load driver
+            try {
+                Class.forName(this.sqlDriver);
+            } catch(ClassNotFoundException e) {
+                System.out.println("Error while loading database driver:");
+                System.out.println(e.toString());
+            }
+            
+            // add connection
             newConnection = DriverManager.getConnection(this.dburl, this.user, this.pswd);
             ConnectionList.add(new DBConnection(newConnection, _inUse));
         } catch(java.sql.SQLException e) {
             System.out.println("SQL-exception while adding connection to pool:");
             System.out.println(e.toString());
-        } // try/catch
+        }
         
         if(_inUse) return newConnection;
         else return null;
