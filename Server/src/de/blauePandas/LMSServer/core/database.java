@@ -26,10 +26,15 @@ public class database implements ConnectionInterface {
         this.connection = null;
         this.stmt = null;
     }
+
+    @Override
+    public void openConnection() {
+        this.connection = pool.getConnection();
+    }
     
     @Override public void prepare(String _Stmt) {
         
-        this.connection = pool.getConnection();
+        this.stmt = null;
         
         try {
             this.stmt = this.connection.prepareStatement(_Stmt);
@@ -42,7 +47,7 @@ public class database implements ConnectionInterface {
     
     @Override public void prepare(String _Stmt, String[] _args) {
         
-        this.connection = pool.getConnection();
+        this.stmt = null;
         
         try {
             this.stmt = this.connection.prepareStatement(_Stmt, _args);
@@ -55,7 +60,8 @@ public class database implements ConnectionInterface {
 
     @Override
     public void prepare(String _Stmt, int _arg) {
-        this.connection = pool.getConnection();
+        
+        this.stmt = null;
         
         try {
             this.stmt = this.connection.prepareStatement(_Stmt, _arg);
@@ -68,7 +74,9 @@ public class database implements ConnectionInterface {
 
     @Override
     public void prepare(String _Stmt, int[] _args) {
-        this.connection = pool.getConnection();
+       
+        this.stmt = null;
+        
         try {
             this.stmt = this.connection.prepareStatement(_Stmt, _args);
         } catch(java.sql.SQLException e) {
@@ -83,16 +91,27 @@ public class database implements ConnectionInterface {
     
     // todo
     @Override public String execute() {
+        
         String result;
         java.sql.ResultSet results;
+       
         try {
-        results = this.stmt.executeQuery();
-        } catch(java.sql.SQLException e) {
-        
+            this.stmt.execute();
+            results = this.stmt.getResultSet();
+        } catch (java.sql.SQLException e) {
+            System.out.println("SQL-Error while trying to execute statement \""+this.stmt+"\":");
+            System.out.println(e.toString());
         }
-        this.pool.storeConnection(this.connection);
-        this.connection = null;
+        // todo: loop through resultset to get output
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     
     } // execute
+
+    @Override
+    public void storeConnection() {
+        this.pool.storeConnection(this.connection);
+        this.connection = null;
+    }
+    
+    
 } // class database

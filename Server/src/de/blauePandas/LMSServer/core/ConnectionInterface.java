@@ -12,11 +12,18 @@ public interface ConnectionInterface {
 
     // grrr; damn Java 7 won't let me do static interface functions -.-
     
+    // opens a connection
+    public void openConnection();
+    
+    // prepares a statement (+binds arguments)
     public void prepare(String _Stmt);
     public void prepare(String _Stmt, String[] _args);
     public void prepare(String _Stmt, int arg);
     public void prepare(String _Stmt, int[] args);
-    // no bind function - just pass everything to prepare
+    
+    // executes the statement
     public String execute();
     
+    // closes the connection
+    public void storeConnection();
 } // ConnectionInterface
