@@ -1,5 +1,6 @@
 package de.blauePandas.LMSServer.control.commands;
 
+import de.blauePandas.LMSServer.Server;
 import de.blauePandas.LMSServer.control.ClientThread;
 
 /**
@@ -38,13 +39,25 @@ public class StopCommand implements  ConsoleCommandInterface
         {
             if (_args[0].equalsIgnoreCase("-Server") || _args[0].equalsIgnoreCase("-S"))
             {
+                ClientThread.StopClient();
+                Server.stopServer();
+
                 return "Server  gestoppt";
             }
+            else
+            {
+                String args = "";
+
+                for(int index = 0; index < _args.length; index++)
+                {
+                    args = args + _args[index] + " ";
+                }
+                return "Befehl " + this.getName() + " " + args + "nicht gefunden";
+            }
         }
-        else
-        {
-            ClientThread.StopClient();
-        }
-        return "Server nicht gestoppt";
+
+        ClientThread.StopClient();
+
+        return "Verbindung getrennt";
     }
 }

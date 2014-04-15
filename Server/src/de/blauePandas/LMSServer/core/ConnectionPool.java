@@ -1,9 +1,10 @@
 package de.blauePandas.LMSServer.core;
 
-import java.sql.*; // failsafe
-//import java.sql.Connection;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
+
+//import java.sql.Connection;
 
 /**
  *
@@ -58,22 +59,22 @@ public class ConnectionPool {
      */
      private Connection addConnection(boolean _inUse) {
         Connection newConnection = null;
-        
+
+         try {  // load driver
+             Class.forName(this.sqlDriver);
+         } catch(ClassNotFoundException e) {
+             System.out.println("Error while loading database driver:");
+             System.out.println(e.toString());
+         }
+
         try {
-            // load driver
-            try {
-                Class.forName(this.sqlDriver);
-            } catch(ClassNotFoundException e) {
-                System.out.println("Error while loading database driver:");
-                System.out.println(e.toString());
-            }
-            
             // add connection
             newConnection = DriverManager.getConnection(this.dburl, this.user, this.pswd);
             ConnectionList.add(new DBConnection(newConnection, _inUse));
         } catch(java.sql.SQLException e) {
             System.out.println("SQL-exception while adding connection to pool:");
-            System.out.println(e.toString());
+            e.printStackTrace();
+            //System.out.println(e.toString());
         }
         
         if(_inUse) return newConnection;

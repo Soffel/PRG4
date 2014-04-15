@@ -27,14 +27,31 @@ public class Server
      * java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost/PRG4
      */
 
+
+    private static ServerSocket server = null;
+    private static ExecutorService executorService = null;
+
+
     public static ConnectionPool mySQL  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
+
+
+    public static void stopServer()
+    {
+        try
+        {
+            executorService.shutdown();
+            server.close();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
 
 
     public static void main(String[] _args)
     {
-        ServerSocket server = null;
-        ExecutorService executorService = null;
-
         try
         {
             server          = new ServerSocket(12345);
@@ -52,12 +69,6 @@ public class Server
                 catch (IOException e)
                 {
                     System.out.println("Server -inWhileschleife- " + e.toString());
-                }
-
-                if (false)//todo clean server stop
-                {
-                    System.out.println("Server wird beendet!");
-                    break;
                 }
             }
         }

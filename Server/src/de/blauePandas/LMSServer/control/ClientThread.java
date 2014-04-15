@@ -76,7 +76,7 @@ public class ClientThread implements Runnable
                     writer.write("   " + msg + "\n");
                     writer.flush();
 
-                    System.out.println("<<" + Thread.currentThread().getName() + ">> "+ input);
+                    System.out.println("ss<<" + Thread.currentThread().getName() + ">> "+ input);
                 }
             }
         }
