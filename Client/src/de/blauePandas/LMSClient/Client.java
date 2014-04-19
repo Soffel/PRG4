@@ -2,6 +2,7 @@ package de.blauePandas.LMSClient;
 
 import de.blauePandas.LMSClient.control.InputThread;
 import de.blauePandas.LMSClient.control.OutputThread;
+import de.blauePandas.LMSClient.control.TextFileWriter;
 
 import java.net.Socket;
 
@@ -20,7 +21,8 @@ public class Client
         {
             Socket client = new Socket("localhost", 12345 );
 
-            System.out.println("Client gestartet");
+            System.out.println("   Client gestartet");
+            TextFileWriter.systemLog("Client gestartet");
 
             InputThread input   = new InputThread(client);
             OutputThread output = new OutputThread(client);
@@ -30,7 +32,9 @@ public class Client
         }
         catch(Exception e)
         {
-            System.out.print("Client -- " + e.toString());
+            TextFileWriter.writeError(e);
+            System.out.println("   Es ist ein Fehler Aufgetreten!\n" +
+                               "   für weitere Infos siehe Errorlog!");
         }
     }
 }

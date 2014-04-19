@@ -31,7 +31,6 @@ public class Server
     private static ServerSocket server = null;
     private static ExecutorService executorService = null;
 
-
     public static ConnectionPool mySQL  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
 
 
@@ -39,7 +38,6 @@ public class Server
     {
         try
         {
-            executorService.shutdown();
             server.close();
         }
         catch(Exception e)
@@ -68,8 +66,18 @@ public class Server
                 }
                 catch (IOException e)
                 {
-                    System.out.println("Server -inWhileschleife- " + e.toString());
+                    if(!server.isClosed()) //todo schönere lösung finden
+                    {
+                        System.out.println("Server -inWhileschleife- " + e.toString());
+                    }
                 }
+
+                if(server.isClosed())
+                {
+                    System.out.println("Server wird beendet!");
+                    break;
+                }
+
             }
         }
         catch (IOException e)

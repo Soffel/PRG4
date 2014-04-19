@@ -28,8 +28,8 @@ public class OutputThread implements Runnable
 
         try
         {
-             input = this.client.getInputStream();
-             reader = new BufferedReader(new InputStreamReader(input));
+            input = this.client.getInputStream();
+            reader = new BufferedReader(new InputStreamReader(input));
 
             while(true)
             {
@@ -37,19 +37,27 @@ public class OutputThread implements Runnable
 
                 if(!output.isEmpty())
                 {
-                    if(output.equalsIgnoreCase("stop"))
+                    if(output.equalsIgnoreCase("Verbindung getrennt") || output.equalsIgnoreCase("Server gestoppt"))
                     {
+                        if(output.equalsIgnoreCase("Server gestoppt"))
+                        {
+                            System.out.println("   der Server wird Beendet.");
+                        }
+
+                        System.out.println("   Client wird beendet.");
+                        TextFileWriter.systemLog("Client beendet");
                         break;
                     }
 
-                    System.out.print(output+"\n>> ");
+                    System.out.print("   " + output+"\n>> ");
                 }
             }
         }
         catch(Exception e)
         {
-            //System.out.println("OutputThred -- " + e.toString());
-            System.out.println("Client wurde beendet");
+            System.out.println("Verbindung zum Server verloren!\n   Client wird beendet");
+
+            TextFileWriter.writeError(e);
         }
         finally
         {
@@ -69,7 +77,9 @@ public class OutputThread implements Runnable
             }
             catch (Exception e)
             {
-                System.out.println("OutputThred -finally- " + e.toString());
+                TextFileWriter.writeError(e);
+                System.out.println("   Es ist ein Fehler Aufgetreten!\n"+
+                                   "   für weitere Infos siehe Errorlog!");
             }
         }
     }

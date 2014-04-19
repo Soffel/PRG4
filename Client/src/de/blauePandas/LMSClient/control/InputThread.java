@@ -38,26 +38,26 @@ public class InputThread implements Runnable
 
             while (true)
             {
-                String input = eingabe.nextLine();
+                String input = null;
 
-                if (!input.isEmpty())
+                if (eingabe.hasNextLine())
                 {
-                    String[] split  = input.split(" ");             //String in wird bei jeden Leerzeichen geteilt und im split gespeichert
-                    String cmd      = split[0];                     //Comando extrakation
+                    input = eingabe.nextLine();
+                }
 
+                if (input != null)
+                {
+                    TextFileWriter.systemLog(input);
                     writer.write(input + "\n"); //übergabe an server
                     writer.flush();             //abschicken
-
-                    if (cmd.equalsIgnoreCase("stop"))
-                    {
-                        break;
-                    }
                 }
             }
         }
         catch (Exception e)
         {
-            System.out.println("InputThread -- " + e.toString());
+            TextFileWriter.writeError(e);
+            System.out.println("   Es ist ein Fehler Aufgetreten!\n" +
+                               "   für weitere Infos siehe Errorlog!");
         }
         finally
         {
@@ -85,7 +85,9 @@ public class InputThread implements Runnable
             }
             catch (Exception e)
             {
-                System.out.println("InputThread -finally- " + e.toString());
+                TextFileWriter.writeError(e);
+                System.out.println("   Es ist ein Fehler Aufgetreten!\n"+
+                                   "   für weitere Infos siehe Errorlog!");
             }
         }
     }

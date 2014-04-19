@@ -73,8 +73,8 @@ public class ConnectionPool {
             ConnectionList.add(new DBConnection(newConnection, _inUse));
         } catch(java.sql.SQLException e) {
             System.out.println("SQL-exception while adding connection to pool:");
-            e.printStackTrace();
-            //System.out.println(e.toString());
+
+            System.out.println(e.toString());
         }
         
         if(_inUse) return newConnection;

@@ -40,6 +40,7 @@ public class ClientThread implements Runnable
         BufferedReader  reader          = null;
         ConsoleControl  ConsoleControl  = new ConsoleControl();
 
+
         ConsoleControl.addCmd(new EchoCommand());
         ConsoleControl.addCmd(new StopCommand()); //todo sobald rechte verwaltung steht entfernen
 
@@ -67,16 +68,19 @@ public class ClientThread implements Runnable
 
                     String msg = ConsoleControl.performCmd(cmd, args,1);//todo rights
 
+
+                    writer.write(msg + "\n");
+                    writer.flush();
+
                     if (clientStop)
                     {
+
                         System.out.print("<<" + Thread.currentThread().getName() + ">> Verbindung getrennt\n");
                         break;
                     }
 
-                    writer.write("   " + msg + "\n");
-                    writer.flush();
 
-                    System.out.println("ss<<" + Thread.currentThread().getName() + ">> "+ input);
+                    System.out.println("<<" + Thread.currentThread().getName() + ">> "+ input);
                 }
             }
         }

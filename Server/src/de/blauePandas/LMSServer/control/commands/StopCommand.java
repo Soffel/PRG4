@@ -42,7 +42,7 @@ public class StopCommand implements  ConsoleCommandInterface
                 ClientThread.StopClient();
                 Server.stopServer();
 
-                return "Server  gestoppt";
+                return "Server gestoppt";
             }
             else
             {
