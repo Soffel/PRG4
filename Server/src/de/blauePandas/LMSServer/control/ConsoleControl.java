@@ -14,11 +14,6 @@ public class ConsoleControl
 {
     private ArrayList<ConsoleCommandInterface> listOfCommands = new ArrayList <ConsoleCommandInterface>();
 
-    private static final String MSG_INFO =   "[-INFO-]  ";
-    private static final String MSG_WARN =   "[-WARN-]  ";
-    private static final String MSG_ERROR =  "[-ERROR-] ";
-
-
     public void addCmd(final ConsoleCommandInterface _cmd)//neues Commando hinzufügen
     {
         if (_cmd != null && !_cmd.getComand().isEmpty() )//prüfen das comando nicht null ist
@@ -83,6 +78,6 @@ public class ConsoleControl
             ConsoleCommandInterface  cmdDo = this.getCmd(_cmd);
             return cmdDo.execute(_args, _rights);  //befehl ausführen
         }
-        return MSG_ERROR  +" Command '" + _cmd + "' not found";
+        return "Command '" + _cmd + "' not found";
     }
 }

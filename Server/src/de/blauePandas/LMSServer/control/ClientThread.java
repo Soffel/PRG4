@@ -49,17 +49,27 @@ public class ClientThread implements Runnable
             writer  = new PrintWriter(client.getOutputStream());
             reader  = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
-            writer.write("<<"+Thread.currentThread().getName() + ">>  Verbindung zum Server ist aufgebaut\n");
+            writer.write("<<"+Thread.currentThread().getName() + ">>  Successfully Serverconnection\n");
             writer.flush();
 
-            System.out.println("<<" + Thread.currentThread().getName() + ">> Verbindung aufgebaut");
+            System.out.println("<<" + Thread.currentThread().getName() + ">> Successfully Clientconnection");
+            TextFileWriter.systemLog( Thread.currentThread().getName() + " Successfully connection");
+
 
             while (true)
             {
                 String input = reader.readLine();
 
+
+
                 if (!input.isEmpty())
                 {
+
+
+                    System.out.println("<<" + Thread.currentThread().getName() + ">> "+ input);
+                    TextFileWriter.systemLog( "INPUT: " + Thread.currentThread().getName() + " " + input);
+
+
                     String[] split  = input.split(" ");             //Sting in wird bei jeden Leerzeichen geteilt und im split gespeichert
                     String cmd      = split[0];                     //Comando extrakation
 
@@ -74,29 +84,23 @@ public class ClientThread implements Runnable
 
                     if (clientStop)
                     {
-
-                        System.out.print("<<" + Thread.currentThread().getName() + ">> Verbindung getrennt\n");
+                        System.out.println("<<" + Thread.currentThread().getName() + ">> interrupt connection");
+                        TextFileWriter.systemLog( Thread.currentThread().getName() + " interrupt connection");
                         break;
                     }
 
 
-                    System.out.println("<<" + Thread.currentThread().getName() + ">> "+ input);
                 }
+
+
             }
         }
 
         catch (Exception e)
         {
-            System.out.print("ClientThred -- " + e.toString() + "\n");
-
-            try
-            {
-                client.close();
-            }
-            catch (IOException e1)
-            {
-                System.out.print("ClientThred -client.close- " + e1.toString() + "\n");
-            }
+            TextFileWriter.writeError(e);
+            System.out.println("   An error has Occurred!\n" +
+                               "   for more info visit the Error Log!");
         }
         finally
         {
@@ -113,7 +117,9 @@ public class ClientThread implements Runnable
                 }
                 catch (IOException e)
                 {
-                    e.printStackTrace();
+                    TextFileWriter.writeError(e);
+                    System.out.println("   An error has Occurred!\n" +
+                                       "   for more info visit the Error Log!");
                 }
             }
 
@@ -125,7 +131,9 @@ public class ClientThread implements Runnable
                 }
                 catch (IOException e)
                 {
-                    e.printStackTrace();
+                    TextFileWriter.writeError(e);
+                    System.out.println("   An error has Occurred!\n" +
+                                       "   for more info visit the Error Log!");
                 }
             }
         }

@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class InputThread implements Runnable
 {
-    private Socket client = null;
+    private  Socket client = null;
 
 
     public InputThread(Socket _client)
@@ -56,8 +56,8 @@ public class InputThread implements Runnable
         catch (Exception e)
         {
             TextFileWriter.writeError(e);
-            System.out.println("   Es ist ein Fehler Aufgetreten!\n" +
-                               "   für weitere Infos siehe Errorlog!");
+            System.out.println("   An error has Occurred!\n" +
+                               "   for more info visit the Error Log!");
         }
         finally
         {
@@ -78,16 +78,12 @@ public class InputThread implements Runnable
                     writer.close();
                 }
 
-                if (client != null)
-                {
-                    client.close();
-                }
             }
             catch (Exception e)
             {
                 TextFileWriter.writeError(e);
-                System.out.println("   Es ist ein Fehler Aufgetreten!\n"+
-                                   "   für weitere Infos siehe Errorlog!");
+                System.out.println("   An error has Occurred!\n"+
+                                   "   for more info visit the Error Log!");
             }
         }
     }

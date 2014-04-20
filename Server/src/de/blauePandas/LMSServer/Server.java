@@ -1,13 +1,14 @@
 package de.blauePandas.LMSServer;
 
 import de.blauePandas.LMSServer.control.ClientThread;
-import de.blauePandas.LMSServer.core.ConnectionPool;
+import de.blauePandas.LMSServer.control.TextFileWriter;
 
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,30 +23,27 @@ import java.util.concurrent.Executors;
  */
 public class Server
 {
-    /**
-     * SQL-exception while adding connection to pool:
-     * java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost/PRG4
-     */
-
 
     private static ServerSocket server = null;
     private static ExecutorService executorService = null;
 
-    public static ConnectionPool mySQL  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
+   // public static ConnectionPool mySQL  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
 
 
     public static void stopServer()
     {
         try
         {
+            //todo Connectionpool Verbindungen schliessen
             server.close();
+
         }
         catch(Exception e)
         {
-            e.printStackTrace();
+            TextFileWriter.writeError(e);
+            System.out.println("");
         }
     }
-
 
 
     public static void main(String[] _args)
@@ -55,7 +53,8 @@ public class Server
             server          = new ServerSocket(12345);
             executorService = Executors.newFixedThreadPool(3); // max 3 Threads gleichzeitig (zum leichteren testen später dan erhöhen ! //todo max verbindungen erhöhen)
 
-            System.out.println("Server gestartet!");
+            System.out.println("Server started successfully");
+            TextFileWriter.systemLog("Server started successfully");
 
             while (true)
             {
@@ -68,13 +67,17 @@ public class Server
                 {
                     if(!server.isClosed()) //todo schönere lösung finden
                     {
-                        System.out.println("Server -inWhileschleife- " + e.toString());
+                        TextFileWriter.writeError(e);
+                        System.out.println("   An error has Occurred!\n" +
+                                           "   for more info visit the Error Log!");
                     }
                 }
 
                 if(server.isClosed())
                 {
-                    System.out.println("Server wird beendet!");
+                    System.out.println("Server is stopped!");
+                    TextFileWriter.systemLog("Server is stopped");
+
                     break;
                 }
 
@@ -82,7 +85,9 @@ public class Server
         }
         catch (IOException e)
         {
-            System.out.print("Server -- " + e.toString());
+            TextFileWriter.writeError(e);
+            System.out.println("   An error has Occurred!\n" +
+                    "   for more info visit the Error Log!");
         }
         finally
         {
@@ -100,8 +105,30 @@ public class Server
             }
             catch (IOException e)
             {
-                e.printStackTrace();
+                TextFileWriter.writeError(e);
+                System.out.println("   An error has Occurred!\n" +
+                        "   for more info visit the Error Log!");
             }
+
+            if (executorService != null)
+            {
+                try
+                {
+                    if (!executorService.awaitTermination(100, TimeUnit.MICROSECONDS))
+                    {
+                        System.out.println("Still waiting after 100ms: calling System.exit(0)...");
+                        TextFileWriter.systemLog("Still waiting after 100ms: calling System.exit(0)...");
+                        System.exit(0);
+                    }
+                }
+                catch (InterruptedException e)
+                {
+                    TextFileWriter.writeError(e);
+                    System.out.println("   An error has Occurred!\n" +
+                                       "   for more info visit the Error Log!");
+                }
+            }
+
         }
     }
 }

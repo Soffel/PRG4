@@ -43,6 +43,6 @@ public class EchoCommand implements ConsoleCommandInterface
             }
             return stringBuilder.toString();
         }
-        return this.getName() + " benötigt ein Argument!";
+        return this.getName() + " requires an argument!";
     }
 }

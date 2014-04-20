@@ -1,5 +1,7 @@
 package de.blauePandas.LMSClient.control;
 
+import de.blauePandas.LMSClient.Client;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -37,15 +39,16 @@ public class OutputThread implements Runnable
 
                 if(!output.isEmpty())
                 {
-                    if(output.equalsIgnoreCase("Verbindung getrennt") || output.equalsIgnoreCase("Server gestoppt"))
+                    if(output.equalsIgnoreCase("interrupt connection") || output.equalsIgnoreCase("stopped server"))
                     {
-                        if(output.equalsIgnoreCase("Server gestoppt"))
+                        if(output.equalsIgnoreCase("stopped server"))
                         {
-                            System.out.println("   der Server wird Beendet.");
+                            System.out.println("   Server is stopped");
+                            TextFileWriter.systemLog("Server is stopped");
                         }
 
-                        System.out.println("   Client wird beendet.");
-                        TextFileWriter.systemLog("Client beendet");
+                        System.out.println("   Client is stopped.");
+                        TextFileWriter.systemLog("Client is stopped");
                         break;
                     }
 
@@ -55,7 +58,8 @@ public class OutputThread implements Runnable
         }
         catch(Exception e)
         {
-            System.out.println("Verbindung zum Server verloren!\n   Client wird beendet");
+            System.out.println("\n    Lost connection to server! \n" +
+                               "    Client is terminated.");
 
             TextFileWriter.writeError(e);
         }
@@ -73,13 +77,13 @@ public class OutputThread implements Runnable
                     input.close();
                 }
 
-                client.close();
+                Client.stop();
             }
             catch (Exception e)
             {
                 TextFileWriter.writeError(e);
-                System.out.println("   Es ist ein Fehler Aufgetreten!\n"+
-                                   "   für weitere Infos siehe Errorlog!");
+                System.out.println("   An error has Occurred!\n"+
+                                   "   for more info visit the Error Log!");
             }
         }
     }

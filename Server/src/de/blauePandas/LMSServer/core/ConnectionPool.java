@@ -21,7 +21,7 @@ public class ConnectionPool {
     final String user = localhost_connector._USERNAME_;
     final String pswd = localhost_connector._PASSWORD_;
     
-    ArrayList<DBConnection> ConnectionList = new ArrayList();
+    ArrayList<DBConnection> ConnectionList = new ArrayList<DBConnection>();
     
     /**
      * constructor private - use ConnectionPool.getInstance(); 
@@ -128,7 +128,8 @@ public class ConnectionPool {
 /*
  * todo:
  * - check for broken connections when trying to use them
- *
+ * - close allConnections - funktion :P (aw)
+ * - use Server "Errorlog" :P (aw)
 */
 
 // String sqlDriver      = "com.mysql.jdbc.Driver";

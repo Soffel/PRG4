@@ -1,4 +1,4 @@
-package de.blauePandas.LMSClient.control;
+package de.blauePandas.LMSServer.control;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,9 +16,8 @@ public class TextFileWriter
     private static java.io.FileWriter writer;
     private static File file;
 
-    private static String ERROR_FILE    = "Client/logfile/ClientError.txt";
-    private static String LOG_FILE      = "Client/logfile/ClientSystemlog.txt";
-
+    private static String ERROR_FILE    = "Server/logfile/ServerError.txt";
+    private static String LOG_FILE      = "Server/logfile/ServerSystemlog.txt";
 
     private static String StringBuild(Exception _error)
     {
@@ -44,7 +43,6 @@ public class TextFileWriter
 
     public static void writeError(Exception _error)
     {
-
         file = new File(ERROR_FILE);
 
         try

@@ -5,6 +5,8 @@ import de.blauePandas.LMSClient.control.OutputThread;
 import de.blauePandas.LMSClient.control.TextFileWriter;
 
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 
 /**
@@ -15,26 +17,31 @@ import java.net.Socket;
  */
 public class Client
 {
+    public static void stop()
+    { // ich weis das das so nicht sonderlich schön ist ^^
+        System.exit(0);
+    }
+
+
     public static void main(String[] _args)
     {
         try
         {
             Socket client = new Socket("localhost", 12345 );
 
-            System.out.println("   Client gestartet");
-            TextFileWriter.systemLog("Client gestartet");
+            System.out.println("   Client started successfully");
+            TextFileWriter.systemLog("Client started successfully");
 
-            InputThread input   = new InputThread(client);
-            OutputThread output = new OutputThread(client);
+            ExecutorService executorService = Executors.newFixedThreadPool(2);
+            executorService.execute(new InputThread(client));
+            executorService.execute(new OutputThread(client));
 
-            new Thread(input).start();
-            new Thread(output).start();
         }
         catch(Exception e)
         {
             TextFileWriter.writeError(e);
-            System.out.println("   Es ist ein Fehler Aufgetreten!\n" +
-                               "   für weitere Infos siehe Errorlog!");
+            System.out.println("   An error has Occurred!\n" +
+                               "   for more info visit the Error Log!");
         }
     }
 }

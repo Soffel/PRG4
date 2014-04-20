@@ -42,22 +42,22 @@ public class StopCommand implements  ConsoleCommandInterface
                 ClientThread.StopClient();
                 Server.stopServer();
 
-                return "Server gestoppt";
+                return "stopped server";
             }
             else
             {
                 String args = "";
 
-                for(int index = 0; index < _args.length; index++)
+                for (String _arg : _args)
                 {
-                    args = args + _args[index] + " ";
+                    args = args + _arg + " ";
                 }
-                return "Befehl " + this.getName() + " " + args + "nicht gefunden";
+                return "command " + this.getName() + " " + args + " no found!";
             }
         }
 
         ClientThread.StopClient();
 
-        return "Verbindung getrennt";
+        return "interrupt connection";
     }
 }
