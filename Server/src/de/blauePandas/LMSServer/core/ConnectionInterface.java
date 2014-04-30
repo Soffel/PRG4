@@ -10,16 +10,10 @@ package de.blauePandas.LMSServer.core;
 
 public interface ConnectionInterface {
 
-    // grrr; damn Java 7 won't let me do static interface functions -.-
-    
-    // opens a connection
-
     /**
-     * opens the connection to the database
+     * fetches a connection to the database from the pool
      */
-        public void openConnection();
-    
-    // prepares a statement (+binds arguments)
+        public void getConnection();
 
     /**
      * prepares a statement for the database
@@ -33,12 +27,18 @@ public interface ConnectionInterface {
     
     /**
      * 
-     * @return the result of the db-query as a string
+     * @return the result of the db-query as a ResultSet
      */
-    public String[] execute();
+    public java.sql.ResultSet execute();
     
     /**
-     * puts a (atm) no longer needed connection on "hold"
+     * puts a (atm) no longer needed connection on "hold in the pool
      */
     public void storeConnection();
+    
+    /**
+     * force-close all connections in pool,
+     * @return number of in-use-connections closed
+     */
+    public int shutdown();
 } // ConnectionInterface

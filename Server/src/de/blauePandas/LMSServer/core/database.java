@@ -3,6 +3,7 @@
 package de.blauePandas.LMSServer.core;
 
 import java.sql.Connection;
+//import java.sql.ResultSet; // unused? whut?
 
 /**
  * MySQL-implementation for ConnectionInterface
@@ -24,15 +25,15 @@ public class database implements ConnectionInterface {
     }
 
     @Override
-    public void openConnection() {
+    public void getConnection() {
         this.connection = pool.getConnection();
     }
     
     @Override public void prepare(String _Stmt) {
-        
         this.stmt = null;
         
         try {
+            this.connection.setAutoCommit(false);
             this.stmt = this.connection.prepareStatement(_Stmt);
         } catch(java.sql.SQLException e) {
             
@@ -46,6 +47,7 @@ public class database implements ConnectionInterface {
         this.stmt = null;
         
         try {
+            this.connection.setAutoCommit(false);
             this.stmt = this.connection.prepareStatement(_Stmt, _args);
         } catch(java.sql.SQLException e) {
             
@@ -60,6 +62,7 @@ public class database implements ConnectionInterface {
         this.stmt = null;
         
         try {
+            this.connection.setAutoCommit(false);
             this.stmt = this.connection.prepareStatement(_Stmt, _arg);
         } catch(java.sql.SQLException e) {
             
@@ -74,6 +77,7 @@ public class database implements ConnectionInterface {
         this.stmt = null;
         
         try {
+            this.connection.setAutoCommit(false);
             this.stmt = this.connection.prepareStatement(_Stmt, _args);
         } catch(java.sql.SQLException e) {
             
@@ -82,33 +86,30 @@ public class database implements ConnectionInterface {
         }
     } // prepare(int[])
     
-    
-    
-    
-    // todo
-    @Override public String[] execute() {
+    @Override public java.sql.ResultSet execute() {
         
-        String result;
-        java.sql.ResultSet results;
+        java.sql.ResultSet results = null;
        
         try {
-            this.stmt.execute();
-            results = this.stmt.getResultSet();
+            results = this.stmt.executeQuery();
         } catch (java.sql.SQLException e) {
             System.out.println("SQL-Error while trying to execute statement \""+this.stmt+"\":");
             System.out.println(e.toString());
         }
         
-        // todo: loop through resultset to get output
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return results;     
     
     } // execute
-
+    
     @Override
     public void storeConnection() {
         this.pool.storeConnection(this.connection);
         this.connection = null;
     }
-    
-    
+
+    @Override
+    public int shutdown() {
+        return this.pool.close();
+    }
+
 } // class database

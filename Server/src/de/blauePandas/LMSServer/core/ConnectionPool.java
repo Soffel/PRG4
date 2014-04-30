@@ -4,8 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
 
-//import java.sql.Connection;
-
 /**
  *
  * @author havoc
@@ -20,8 +18,12 @@ public class ConnectionPool {
     final String dburl = "jdbc:mysql://"+localhost_connector._HOSTNAME_;
     final String user = localhost_connector._USERNAME_;
     final String pswd = localhost_connector._PASSWORD_;
+     
+    // mein Compiler will Variante 1, der von Andre Variante 2.
+    // kommentiert einfach um wies eurem compiler gefällt.
     
-    ArrayList<DBConnection> ConnectionList = new ArrayList<DBConnection>();
+    ArrayList<DBConnection> ConnectionList = new ArrayList();
+    //ArrayList<DBConnection> ConnectionList = new ArrayList<DBConnection>();
     
     /**
      * constructor private - use ConnectionPool.getInstance(); 
@@ -42,12 +44,26 @@ public class ConnectionPool {
     } // getInstance
     
     /**
-     * "abandon" a pool, waiting for remaining connections to close
-     * (and then... for the garbage collector. ;] )
-     * caution: possible to generate memory-leak
+     * force-closes all connections in the pool (for shutdown etc.)
+     * caution: also closes in-use connections
+     * @return number of in-use connections closed
      */
-    public void closeInstance() {
+    public int close() {
+        int openConnections = 0;
+        for(int i = 0; i < this.ConnectionList.size(); i++) {
+            try {
+                DBConnection con = this.ConnectionList.get(i);
+                con.Data.close();
+                if(con.inUse) openConnections++;
+                this.ConnectionList.remove(i);
+            }
+            catch (java.sql.SQLException e) {
+                System.out.println("Error while closing Connectionpool: ");
+                System.out.println(e.toString());
+            }
+        }
         ConnectionPool.OpenInstance = null;
+        return openConnections;
     }
     
     /**
