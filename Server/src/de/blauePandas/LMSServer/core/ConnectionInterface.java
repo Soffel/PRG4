@@ -32,7 +32,8 @@ public interface ConnectionInterface {
     public java.sql.ResultSet execute();
     
     /**
-     * puts a (atm) no longer needed connection on "hold in the pool
+     * puts a (atm) no longer needed connection on "hold" in the pool,
+     * closing the current ResultSet and Statement
      */
     public void storeConnection();
     

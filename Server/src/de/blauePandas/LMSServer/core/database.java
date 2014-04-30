@@ -103,6 +103,14 @@ public class database implements ConnectionInterface {
     
     @Override
     public void storeConnection() {
+        
+        try {
+            if(this.stmt != null) this.stmt.close();
+        } catch (java.sql.SQLException e) {
+            System.out.println("Error while closing statement: ");
+            System.out.println(e.toString());
+        }
+        
         this.pool.storeConnection(this.connection);
         this.connection = null;
     }
