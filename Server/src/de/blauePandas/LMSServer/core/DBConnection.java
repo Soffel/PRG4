@@ -29,8 +29,8 @@ public class DBConnection {
      * @param _inUse boolean value of the in-use marker
      */
     protected DBConnection(Connection _data, boolean _inUse) {
-        this.Data = _data;
-        this.inUse      = _inUse;
+        this.Data   = _data;
+        this.inUse  = _inUse;
         
     } // constructor 2
     

@@ -19,6 +19,7 @@ public class ClientThread implements Runnable
 {
     private Socket client               = null;
     private static boolean clientStop   = false;
+    public static ConsoleControl  ConsoleControl = null;
 
     /* übergabe des Clienten */
     public ClientThread(Socket _client)
@@ -36,12 +37,13 @@ public class ClientThread implements Runnable
     @Override
     public void run()
     {
-        PrintWriter     writer          = null;
-        BufferedReader  reader          = null;
-        ConsoleControl  ConsoleControl  = new ConsoleControl();
+        PrintWriter     writer  = null;
+        BufferedReader  reader  = null;
 
+        ConsoleControl  = new ConsoleControl();
 
         ConsoleControl.addCmd(new EchoCommand());
+        //ConsoleControl.addCmd(new LoginCommand());
         ConsoleControl.addCmd(new StopCommand()); //todo sobald rechte verwaltung steht entfernen
 
         try
@@ -60,15 +62,10 @@ public class ClientThread implements Runnable
             {
                 String input = reader.readLine();
 
-
-
                 if (!input.isEmpty())
                 {
-
-
                     System.out.println("<<" + Thread.currentThread().getName() + ">> "+ input);
                     TextFileWriter.systemLog( "INPUT: " + Thread.currentThread().getName() + " " + input);
-
 
                     String[] split  = input.split(" ");             //Sting in wird bei jeden Leerzeichen geteilt und im split gespeichert
                     String cmd      = split[0];                     //Comando extrakation
@@ -76,8 +73,7 @@ public class ClientThread implements Runnable
                     String[] args   = new String[split.length-1];   // restlichen eingaben
                     System.arraycopy(split, 1, args, 0, split.length - 1);
 
-                    String msg = ConsoleControl.performCmd(cmd, args,1);//todo rights
-
+                    String msg = ConsoleControl.performCmd(cmd, args,100);//todo rights
 
                     writer.write(msg + "\n");
                     writer.flush();
@@ -88,11 +84,7 @@ public class ClientThread implements Runnable
                         TextFileWriter.systemLog( Thread.currentThread().getName() + " interrupt connection");
                         break;
                     }
-
-
                 }
-
-
             }
         }
 

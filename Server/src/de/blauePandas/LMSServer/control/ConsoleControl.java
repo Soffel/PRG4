@@ -14,44 +14,43 @@ public class ConsoleControl
 {
     private ArrayList<ConsoleCommandInterface> listOfCommands = new ArrayList <ConsoleCommandInterface>();
 
-    public void addCmd(final ConsoleCommandInterface _cmd)//neues Commando hinzufügen
+    public void addCmd(final ConsoleCommandInterface _cmd)
     {
-        if (_cmd != null && !_cmd.getComand().isEmpty() )//prüfen das comando nicht null ist
+        if (_cmd != null && !_cmd.getCommand().isEmpty() )
         {
-            this.listOfCommands.add(_cmd);  //cmd hinzufügen
+            this.listOfCommands.add(_cmd);
         }
     }
 
 
-    public void removeCmd(final String _cmd)// Comando löschen
+    public void removeCmd(final String _cmd)
     {
         if (!_cmd.isEmpty())
         {
-            for (int index = 1; index < this.listOfCommands.size(); index++)//das zu löschende comando in arraylist suchen
+            for (int index = 1; index < this.listOfCommands.size(); index++)
             {
-                if (this.listOfCommands.get(index).getComand().equalsIgnoreCase(_cmd))//wen gefunden
+                if (this.listOfCommands.get(index).getCommand().equalsIgnoreCase(_cmd))
                 {
-                    this.listOfCommands.remove(index);    //dan löschen
+                    this.listOfCommands.remove(index);
                 }
             }
         }
     }
 
 
-    public boolean existCmd(final String _cmd)  //prüfen ob befehl existiert
+    public boolean existCmd(final String _cmd)
     {
-        if (!_cmd.isEmpty())//wen _Cmd nicht leer
+        if (!_cmd.isEmpty())
         {
-            for (ConsoleCommandInterface ccmd : this.listOfCommands)//Array durchlaufen & befehl raushohlen
+            for (ConsoleCommandInterface ccmd : this.listOfCommands)
             {
-                if (ccmd.getComand().equalsIgnoreCase(_cmd))//überprüfen ob cmds gleich sind
+                if (ccmd.getCommand().equalsIgnoreCase(_cmd))
                 {
-                    return true; // ja es existiert
+                    return true;
                 }
             }
-            //Konsole.ConsoleOut.writeError("Befehl '" + _cmd + "' nicht gefunden"); todo
         }
-        return false; //nein es existiert nicht
+        return false;
     }
 
 
@@ -59,24 +58,24 @@ public class ConsoleControl
     {
         if (existCmd(_cmd))
         {
-            for (ConsoleCommandInterface ccmd : this.listOfCommands)//Array mit Comandos durchlaufen
+            for (ConsoleCommandInterface ccmd : this.listOfCommands)
             {
-                if (ccmd.getComand().equalsIgnoreCase(_cmd))//wen Befehl gefunden
+                if (ccmd.getCommand().equalsIgnoreCase(_cmd))
                 {
-                    return ccmd;          //gespeicherten befehl ausgeben ( kann ma auch mit eingegebenen machen, aber ist eig egal)
+                    return ccmd;
                 }
             }
         }
-        return null;     // null wen nicht gefunden
+        return null;
     }
 
 
-    public String performCmd(final String _cmd, final String[] _args, final int _rights)// eigegebenes Comando ausführen
+    public String performCmd(final String _cmd, final String[] _args, final int _rights)
     {
-        if (existCmd(_cmd) && this.getCmd(_cmd)!= null ) //prüfen ob existiert(siehe weiter oben)
+        if (existCmd(_cmd) && this.getCmd(_cmd)!= null )
         {
             ConsoleCommandInterface  cmdDo = this.getCmd(_cmd);
-            return cmdDo.execute(_args, _rights);  //befehl ausführen
+            return cmdDo.execute(_args, _rights);
         }
         return "Command '" + _cmd + "' not found";
     }

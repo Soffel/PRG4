@@ -14,7 +14,7 @@ public class Person
     private int    userRigths   = 0;
 
 
-    // benötigt login, logout, neue Person anlege, Personendaten ändern, Person löschen
+    // benötigt login, logout, neue Person anlegen, Personendaten ändern, Person löschen
 
     /**
      * Get Anweisungen

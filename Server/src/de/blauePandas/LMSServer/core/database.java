@@ -2,8 +2,12 @@
 
 package de.blauePandas.LMSServer.core;
 
+import de.blauePandas.LMSServer.control.TextFileWriter;
+
 import java.sql.Connection;
-//import java.sql.ResultSet; // unused? whut?
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  * MySQL-implementation for ConnectionInterface
@@ -14,7 +18,7 @@ public class database implements ConnectionInterface {
     
     Connection connection;
     ConnectionPool pool;
-    java.sql.PreparedStatement stmt; 
+    PreparedStatement stmt;
 
     // would love to get rid of constructor by making prepare and execute static,
     // but would need Java 8 for that, only have Java 7 here
@@ -35,10 +39,10 @@ public class database implements ConnectionInterface {
         try {
             this.connection.setAutoCommit(false);
             this.stmt = this.connection.prepareStatement(_Stmt);
-        } catch(java.sql.SQLException e) {
-            
-            System.out.println("SQL-Error while trying to prepare statement \""+_Stmt+"\":");
-            System.out.println(e.toString());
+        } catch(SQLException e) {
+            TextFileWriter.writeError(e);
+            System.out.println("   An error has Occurred!\n" +
+                    "   for more info visit the Error Log!");
         }
     } // prepare
     
@@ -49,10 +53,10 @@ public class database implements ConnectionInterface {
         try {
             this.connection.setAutoCommit(false);
             this.stmt = this.connection.prepareStatement(_Stmt, _args);
-        } catch(java.sql.SQLException e) {
-            
-            System.out.println("SQL-Error while trying to prepare statement \""+_Stmt+"\":");
-            System.out.println(e.toString());
+        } catch(SQLException e) {
+            TextFileWriter.writeError(e);
+            System.out.println("   An error has Occurred!\n" +
+                    "   for more info visit the Error Log!");
         }
     } // prepare(String[])
 
@@ -64,10 +68,10 @@ public class database implements ConnectionInterface {
         try {
             this.connection.setAutoCommit(false);
             this.stmt = this.connection.prepareStatement(_Stmt, _arg);
-        } catch(java.sql.SQLException e) {
-            
-            System.out.println("SQL-Error while trying to prepare statement \""+_Stmt+"\":");
-            System.out.println(e.toString());
+        } catch(SQLException e) {
+            TextFileWriter.writeError(e);
+            System.out.println("   An error has Occurred!\n" +
+                    "   for more info visit the Error Log!");
         } 
     } // prepare(int)
 
@@ -79,22 +83,23 @@ public class database implements ConnectionInterface {
         try {
             this.connection.setAutoCommit(false);
             this.stmt = this.connection.prepareStatement(_Stmt, _args);
-        } catch(java.sql.SQLException e) {
-            
-            System.out.println("SQL-Error while trying to prepare statement \""+_Stmt+"\":");
-            System.out.println(e.toString());
+        } catch(SQLException e) {
+            TextFileWriter.writeError(e);
+            System.out.println("   An error has Occurred!\n" +
+                    "   for more info visit the Error Log!");
         }
     } // prepare(int[])
     
-    @Override public java.sql.ResultSet execute() {
+    @Override public ResultSet execute() {
         
-        java.sql.ResultSet results = null;
+        ResultSet results = null;
        
         try {
             results = this.stmt.executeQuery();
-        } catch (java.sql.SQLException e) {
-            System.out.println("SQL-Error while trying to execute statement \""+this.stmt+"\":");
-            System.out.println(e.toString());
+        } catch (SQLException e) {
+            TextFileWriter.writeError(e);
+            System.out.println("   An error has Occurred!\n" +
+                    "   for more info visit the Error Log!");
         }
         
         return results;     
@@ -106,9 +111,10 @@ public class database implements ConnectionInterface {
         
         try {
             if(this.stmt != null) this.stmt.close();
-        } catch (java.sql.SQLException e) {
-            System.out.println("Error while closing statement: ");
-            System.out.println(e.toString());
+        } catch (SQLException e) {
+            TextFileWriter.writeError(e);
+            System.out.println("   An error has Occurred!\n" +
+                    "   for more info visit the Error Log!");
         }
         
         this.pool.storeConnection(this.connection);

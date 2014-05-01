@@ -2,6 +2,7 @@ package de.blauePandas.LMSServer;
 
 import de.blauePandas.LMSServer.control.ClientThread;
 import de.blauePandas.LMSServer.control.TextFileWriter;
+import de.blauePandas.LMSServer.core.ConnectionPool;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -23,20 +24,17 @@ import java.util.concurrent.TimeUnit;
  */
 public class Server
 {
-
     private static ServerSocket server = null;
     private static ExecutorService executorService = null;
 
-   // public static ConnectionPool mySQL  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
-
+   public static ConnectionPool database  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
 
     public static void stopServer()
     {
         try
         {
-            //todo Connectionpool Verbindungen schliessen
+            database.close();
             server.close();
-
         }
         catch(Exception e)
         {
@@ -87,7 +85,7 @@ public class Server
         {
             TextFileWriter.writeError(e);
             System.out.println("   An error has Occurred!\n" +
-                    "   for more info visit the Error Log!");
+                               "   for more info visit the Error Log!");
         }
         finally
         {
@@ -107,7 +105,7 @@ public class Server
             {
                 TextFileWriter.writeError(e);
                 System.out.println("   An error has Occurred!\n" +
-                        "   for more info visit the Error Log!");
+                                   "   for more info visit the Error Log!");
             }
 
             if (executorService != null)
@@ -128,7 +126,6 @@ public class Server
                                        "   for more info visit the Error Log!");
                 }
             }
-
         }
     }
 }

@@ -1,7 +1,10 @@
 package de.blauePandas.LMSServer.core;
 
+import de.blauePandas.LMSServer.control.TextFileWriter;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 /**
@@ -22,8 +25,8 @@ public class ConnectionPool {
     // mein Compiler will Variante 1, der von Andre Variante 2.
     // kommentiert einfach um wies eurem compiler gefällt.
     
-    ArrayList<DBConnection> ConnectionList = new ArrayList();
-    //ArrayList<DBConnection> ConnectionList = new ArrayList<DBConnection>();
+    //ArrayList<DBConnection> ConnectionList = new ArrayList();
+    ArrayList<DBConnection> ConnectionList = new ArrayList<DBConnection>();
     
     /**
      * constructor private - use ConnectionPool.getInstance(); 
@@ -57,9 +60,10 @@ public class ConnectionPool {
                 if(con.inUse) openConnections++;
                 this.ConnectionList.remove(i);
             }
-            catch (java.sql.SQLException e) {
-                System.out.println("Error while closing Connectionpool: ");
-                System.out.println(e.toString());
+            catch (SQLException e) {
+                TextFileWriter.writeError(e);
+                System.out.println("   An error has Occurred!\n" +
+                        "   for more info visit the Error Log!");
             }
         }
         ConnectionPool.OpenInstance = null;
@@ -79,8 +83,9 @@ public class ConnectionPool {
          try {  // load driver
              Class.forName(this.sqlDriver);
          } catch(ClassNotFoundException e) {
-             System.out.println("Error while loading database driver:");
-             System.out.println(e.toString());
+             TextFileWriter.writeError(e);
+             System.out.println("   An error has Occurred!\n" +
+                     "   for more info visit the Error Log!");
          }
 
         try {
@@ -88,9 +93,9 @@ public class ConnectionPool {
             newConnection = DriverManager.getConnection(this.dburl, this.user, this.pswd);
             ConnectionList.add(new DBConnection(newConnection, _inUse));
         } catch(java.sql.SQLException e) {
-            System.out.println("SQL-exception while adding connection to pool:");
-
-            System.out.println(e.toString());
+            TextFileWriter.writeError(e);
+            System.out.println("   An error has Occurred!\n" +
+                    "   for more info visit the Error Log!");
         }
         
         if(_inUse) return newConnection;
@@ -105,12 +110,12 @@ public class ConnectionPool {
      */
     public Connection getConnection() {
         Connection freeConnection = null;
-        
-        for(int i = 0; i < this.ConnectionList.size(); i++) {
-            
-            if(!(this.ConnectionList.get(i).inUse)) { // free connection found
-                freeConnection = this.ConnectionList.get(i).Data;
-                this.ConnectionList.get(i).inUse = true;
+
+        for (DBConnection aConnectionList : this.ConnectionList) {
+
+            if (!(aConnectionList.inUse)) { // free connection found
+                freeConnection = aConnectionList.Data;
+                aConnectionList.inUse = true;
                 break;
             } // if
         } // for
@@ -130,10 +135,10 @@ public class ConnectionPool {
      * @param _connection the connection to be stored
      */
     public void storeConnection(Connection _connection) {
-        
-        for(int i = 0; i < this.ConnectionList.size(); i++) {
-            if(this.ConnectionList.get(i).Data == _connection) { // connection found
-                this.ConnectionList.get(i).inUse = false;
+
+        for (DBConnection aConnectionList : this.ConnectionList) {
+            if (aConnectionList.Data == _connection) { // connection found
+                aConnectionList.inUse = false;
                 break;
             } // if
         } // for
@@ -144,8 +149,6 @@ public class ConnectionPool {
 /*
  * todo:
  * - check for broken connections when trying to use them
- * - close allConnections - funktion :P (aw)
- * - use Server "Errorlog" :P (aw)
 */
 
 // String sqlDriver      = "com.mysql.jdbc.Driver";

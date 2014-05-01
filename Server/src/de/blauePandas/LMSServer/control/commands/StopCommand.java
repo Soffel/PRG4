@@ -19,7 +19,7 @@ public class StopCommand implements  ConsoleCommandInterface
 
 
     @Override
-    public String getComand()
+    public String getCommand()
     {
         return "stop";
     }
@@ -28,7 +28,7 @@ public class StopCommand implements  ConsoleCommandInterface
     @Override
     public int getRight()
     {
-        return 0;
+        return 99;
     }
 
 
@@ -37,15 +37,16 @@ public class StopCommand implements  ConsoleCommandInterface
     {
         if (_args.length > 0)
         {
-            if (_args[0].equalsIgnoreCase("-Server") || _args[0].equalsIgnoreCase("-S"))
+            if(this.getRight() <= _rights)
             {
-                ClientThread.StopClient();
-                Server.stopServer();
+                if (_args[0].equalsIgnoreCase("-Server") || _args[0].equalsIgnoreCase("-S"))
+                {
+                    ClientThread.StopClient();
+                    Server.stopServer();
 
-                return "stopped server";
-            }
-            else
-            {
+                    return "stopped server";
+                }
+
                 String args = "";
 
                 for (String _arg : _args)
@@ -54,6 +55,7 @@ public class StopCommand implements  ConsoleCommandInterface
                 }
                 return "command " + this.getName() + " " + args + " no found!";
             }
+            return "You don't have the permissions to do this";
         }
 
         ClientThread.StopClient();

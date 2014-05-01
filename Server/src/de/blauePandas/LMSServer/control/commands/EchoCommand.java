@@ -16,7 +16,7 @@ public class EchoCommand implements ConsoleCommandInterface
 
 
     @Override
-    public String getComand()
+    public String getCommand()
     {
         return "echo";
     }
