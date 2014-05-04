@@ -22,11 +22,7 @@ public class ConnectionPool {
     final String user = localhost_connector._USERNAME_;
     final String pswd = localhost_connector._PASSWORD_;
      
-    // mein Compiler will Variante 1, der von Andre Variante 2.
-    // kommentiert einfach um wies eurem compiler gefällt.
-    
-    //ArrayList<DBConnection> ConnectionList = new ArrayList();
-    ArrayList<DBConnection> ConnectionList = new ArrayList<DBConnection>();
+    ArrayList<DBConnection> ConnectionList = new ArrayList<>();
     
     /**
      * constructor private - use ConnectionPool.getInstance(); 
