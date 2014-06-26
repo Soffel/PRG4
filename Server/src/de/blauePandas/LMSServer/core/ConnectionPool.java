@@ -1,150 +1,107 @@
+
 package de.blauePandas.LMSServer.core;
 
 import de.blauePandas.LMSServer.control.TextFileWriter;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 
+
 /**
- *
- * @author havoc
- * 
- * manages database-connections, provides methods for access by database
+ * Created with IntelliJ IDEA.
+ * Team: blaue Pandas
+ * User: Andre Wagenknecht
+ * Date: 04.03.14
  */
 
-public class ConnectionPool {
-    
-    static ConnectionPool OpenInstance = null;
-    String sqlDriver = "com.mysql.jdbc.Driver";
-    final String dburl = "jdbc:mysql://"+localhost_connector._HOSTNAME_;
-    final String user = localhost_connector._USERNAME_;
-    final String pswd = localhost_connector._PASSWORD_;
-     
-    ArrayList<DBConnection> ConnectionList = new ArrayList<>();
-    
-    /**
-     * constructor private - use ConnectionPool.getInstance(); 
-     */
-    private ConnectionPool() {
-        this.addConnection(false);
-    } // constructor
-    
-    /**
-     * creates a ConnectionPool if no open one is there,
-     * returns it (or the open one that was there)
-     * 
-     * @return an open ConnectionPool
-     */
-    public static ConnectionPool getInstance() {
-        if(OpenInstance == null) OpenInstance = new ConnectionPool();
-        return OpenInstance;
-    } // getInstance
-    
-    /**
-     * force-closes all connections in the pool (for shutdown etc.)
-     * caution: also closes in-use connections
-     * @return number of in-use connections closed
-     */
-    public int close() {
-        int openConnections = 0;
-        for(int i = 0; i < this.ConnectionList.size(); i++) {
-            try {
-                DBConnection con = this.ConnectionList.get(i);
-                con.Data.close();
-                if(con.inUse) openConnections++;
-                this.ConnectionList.remove(i);
-            }
-            catch (SQLException e) {
-                TextFileWriter.writeError(e);
-                System.out.println("   An error has Occurred!\n" +
-                        "   for more info visit the Error Log!");
+public class ConnectionPool
+{
+    ArrayList<Connect> listOfConnections   = new ArrayList<>();
+    String sqlDriver      = "com.mysql.jdbc.Driver";
+    String sqlDatabase    = "jdbc:mysql://";
+    String sqlUser        = "root";         //sql username
+    String sqlPsw         = "";             //sql userpasswort
+
+
+    public ConnectionPool(String _sqlDatabaseUrl)
+    {
+        this.sqlDatabase    = this.sqlDatabase + _sqlDatabaseUrl;
+    }
+
+
+    public ConnectionPool(String _sqlDatabaseUrl, String _sqlUser, String _sqlPsw)
+    {
+        this.sqlDatabase    = this.sqlDatabase + _sqlDatabaseUrl;
+        this.sqlUser        = _sqlUser;
+        this.sqlPsw         = _sqlPsw;
+    }
+
+
+    public Connection getConnection()
+    {
+        Connection connection;
+
+        for (int index = 0; index < listOfConnections.size(); index++)
+        {
+            if (!listOfConnections.get(index).inUse)
+            {
+                listOfConnections.get(index).inUse = true;
+
+                try
+                {
+                    if(!listOfConnections.get(index).connection.isClosed())
+                        return listOfConnections.get(index).connection;
+                    else
+                        listOfConnections.remove(index);
+
+                }
+                catch (SQLException e)
+                {
+                    TextFileWriter.writeError(e);
+                    System.out.println("   An error has Occurred!\n" +
+                                       "   for more info visit the Error Log!");
+                }
             }
         }
-        ConnectionPool.OpenInstance = null;
-        return openConnections;
-    }
-    
-    /**
-     * adds a new connection to the pool, 
-     * flags as in-use if _inUse argument is true
-     * 
-     * @return the added connection if _inUse = true; else null
-     * @param _inUse true if you want to directly use (&return) the connection
-     */
-     private Connection addConnection(boolean _inUse) {
-        Connection newConnection = null;
 
-         try {  // load driver
-             Class.forName(this.sqlDriver);
-         } catch(ClassNotFoundException e) {
-             TextFileWriter.writeError(e);
-             System.out.println("   An error has Occurred!\n" +
-                     "   for more info visit the Error Log!");
-         }
+        try
+        {
+            Class.forName(this.sqlDriver);
 
-        try {
-            // add connection
-            newConnection = DriverManager.getConnection(this.dburl, this.user, this.pswd);
-            ConnectionList.add(new DBConnection(newConnection, _inUse));
-        } catch(java.sql.SQLException e) {
+            connection = DriverManager.getConnection(this.sqlDatabase,this.sqlUser,this.sqlPsw);
+        }
+        catch (Exception e)
+        {
             TextFileWriter.writeError(e);
             System.out.println("   An error has Occurred!\n" +
-                    "   for more info visit the Error Log!");
+                               "   for more info visit the Error Log!");
+            return null;
         }
-        
-        if(_inUse) return newConnection;
-        else return null;
-    } // addConnection
-    
-    /**
-     * picks an unused connection from the pool,
-     * marks it as in-use
-     * 
-     * @return a connection
-     */
-    public Connection getConnection() {
-        Connection freeConnection = null;
 
-        for (DBConnection aConnectionList : this.ConnectionList) {
+        Connect connect = new Connect(connection, true);
 
-            if (!(aConnectionList.inUse)) { // free connection found
-                freeConnection = aConnectionList.Data;
-                aConnectionList.inUse = true;
-                break;
-            } // if
-        } // for
-        
-        if(freeConnection == null) { // no free connection found, just make a new one
-            freeConnection = addConnection(true);
-        } // if
-        
-        return freeConnection;
-    } // getConnection
-    
-    /**
-     * unsets the inUse-marker. 
-     * Use with caution!
-     * Be sure to remove all pointers to the connection!
-     * 
-     * @param _connection the connection to be stored
-     */
-    public void storeConnection(Connection _connection) {
+        this.listOfConnections.add(connect);
 
-        for (DBConnection aConnectionList : this.ConnectionList) {
-            if (aConnectionList.Data == _connection) { // connection found
-                aConnectionList.inUse = false;
-                break;
-            } // if
-        } // for
-    } // closeConnection
-    
-} // class ConnectionPool
+        return connection;
+    }
 
-/*
- * todo:
- * - check for broken connections when trying to use them
-*/
 
-// String sqlDriver      = "com.mysql.jdbc.Driver";
+    public void closeConnection(Connection _connection)
+    {
+        try
+        {
+            for(int index = 0; index < this.listOfConnections.size(); index++ )
+            {
+                if(this.listOfConnections.equals(_connection))
+                {
+                    this.listOfConnections.get(index).inUse = false;
+                    break;
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+}

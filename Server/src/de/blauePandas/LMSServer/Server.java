@@ -2,7 +2,6 @@ package de.blauePandas.LMSServer;
 
 import de.blauePandas.LMSServer.control.ClientThread;
 import de.blauePandas.LMSServer.control.TextFileWriter;
-import de.blauePandas.LMSServer.core.ConnectionPool;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -27,13 +26,13 @@ public class Server
     private static ServerSocket server = null;
     private static ExecutorService executorService = null;
 
-   public static ConnectionPool database  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
+   //public static ConnectionPool database  = ConnectionPool.getInstance(); // erstellen eines "ConnectionPools"
 
     public static void stopServer()
     {
         try
         {
-            database.close();
+
             server.close();
         }
         catch(Exception e)

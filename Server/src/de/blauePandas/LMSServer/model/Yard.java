@@ -8,4 +8,12 @@ package de.blauePandas.LMSServer.model;
  */
 public class Yard
 {
+    private int id;
+    private int itemId;
+    private int shelfId;
+    private int numberOfItems;
+    private int posHori;
+    private String posVerti;
+    private boolean occupied;
+
 }

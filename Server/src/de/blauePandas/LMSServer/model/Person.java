@@ -8,36 +8,10 @@ package de.blauePandas.LMSServer.model;
  */
 public class Person
 {
-    private String personName   = "NoLogin";
-    private String userName     = "NoLogin";
-    private String userPsw      = "";
-    private int    userRigths   = 0;
-
-
-    // benötigt login, logout, neue Person anlegen, Personendaten ändern, Person löschen
-
-    /**
-     * Get Anweisungen
-     */
-
-    public String getUsername()
-    {
-        return this.userName;
-    }
-
-    public String getPersonName()
-    {
-        return this.personName;
-    }
-
-    public String getUserPsw()
-    {
-        return this.userPsw;
-    }
-
-    public int getUserRigths()
-    {
-        return this.userRigths;
-    }
+    private int id;
+    private int rights;
+    private String name;
+    private String loginName;
+    private String loginPsw;
 
 }

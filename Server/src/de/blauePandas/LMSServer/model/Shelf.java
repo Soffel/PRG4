@@ -8,4 +8,9 @@ package de.blauePandas.LMSServer.model;
  */
 public class Shelf
 {
+    private int id;
+    private String name;
+    private int freeYard;
+    private int maxLoad;
+    private int freeLoad;
 }

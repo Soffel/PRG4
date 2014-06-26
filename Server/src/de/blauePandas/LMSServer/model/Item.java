@@ -8,5 +8,8 @@ package de.blauePandas.LMSServer.model;
  */
 public class Item
 {
-    //benötigt Item anlegen, Item einlagern, Item bearbeiten, Item löschen
+    private int id;
+    private String name;
+    private int weight;
+    private boolean hasDate;
 }
