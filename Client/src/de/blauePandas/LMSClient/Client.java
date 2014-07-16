@@ -15,6 +15,7 @@ import java.util.concurrent.Executors;
  * User: Andre Wagenknecht
  * Date: 23.02.14
  */
+
 public class Client
 {
     public static void stopClient()
@@ -26,11 +27,12 @@ public class Client
     {
         try
         {
-            Socket client = new Socket("localhost", 12345 );
+            Socket client = new Socket("localhost", 12345 ); //verbindung zum server herstellen
 
             System.out.print("   Client started successfully \n>> ");
             TextFileWriter.systemLog("Client started successfully");
 
+            // starten der in & output-threads
             ExecutorService executorService = Executors.newFixedThreadPool(2);
             executorService.execute(new InputThread(client));
             executorService.execute(new OutputThread(client));
@@ -40,7 +42,7 @@ public class Client
         {
             TextFileWriter.writeError(e);
             System.out.println("   An error has Occurred!\n" +
-                    "   for more info visit the Error Log!");
+                               "   for more info visit the Error Log!");
         }
     }
 }

@@ -7,6 +7,11 @@ package de.blauePandas.LMSServer.core.dao;
  * Date: 26.06.14
  */
 
-public interface DAOInterface
+public interface DAOInterface <T>
 {
+    public boolean insert(T _t);
+    public T       select(T _t);
+    public boolean update(T _t);
+    public boolean delete(T _t);
 }
+

@@ -19,8 +19,8 @@ public class OutputThread implements Runnable
     public OutputThread(Socket _client)
     {
         this.client = _client;
-
     }
+
 
     @Override
     public void run()
@@ -52,16 +52,14 @@ public class OutputThread implements Runnable
                         break;
                     }
 
-                    System.out.print("   " + output+"\n>> ");
-
-
+                    System.out.print("   " + output+"\n>> "); //ausgabe der Servernachricht auf console
                 }
             }
         }
         catch(Exception e)
         {
             System.out.println("\n    Lost connection to server! \n" +
-                    "    Client is terminated.");
+                               "    Client is terminated.");
 
             TextFileWriter.writeError(e);
         }
@@ -85,7 +83,7 @@ public class OutputThread implements Runnable
             {
                 TextFileWriter.writeError(e);
                 System.out.println("   An error has Occurred!\n"+
-                        "   for more info visit the Error Log!");
+                                   "   for more info visit the Error Log!");
             }
         }
     }

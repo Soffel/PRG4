@@ -19,7 +19,8 @@ public class ClientThread implements Runnable
 {
     private Socket client               = null;
     private static boolean clientStop   = false;
-    public static ConsoleControl  ConsoleControl = null;
+    public static ConsoleControl ConsoleControl = null;
+    //public static ConnectionPool pool = null;
 
     /* übergabe des Clienten */
     public ClientThread(Socket _client)
@@ -41,6 +42,7 @@ public class ClientThread implements Runnable
         BufferedReader  reader  = null;
 
         ConsoleControl  = new ConsoleControl();
+        //pool = new ConnectionPool("localhost/prgjava","root","");
 
         ConsoleControl.addCmd(new EchoCommand());
         //ConsoleControl.addCmd(new LoginCommand());

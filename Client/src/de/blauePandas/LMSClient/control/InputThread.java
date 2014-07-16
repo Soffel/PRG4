@@ -16,7 +16,6 @@ public class InputThread implements Runnable
 {
     private  Socket client = null;
 
-
     public InputThread(Socket _client)
     {
         this.client = _client;
@@ -40,14 +39,15 @@ public class InputThread implements Runnable
             {
                 String input = null;
 
-                if (eingabe.hasNextLine())
+                if (eingabe.hasNextLine()) //wen Consoleneingabe erfolgt
                 {
                     input = eingabe.nextLine();
                 }
 
                 if (input != null)
                 {
-                    TextFileWriter.systemLog(input);
+                    TextFileWriter.systemLog(input);//sichern im systemlog
+
                     writer.write(input + "\n"); //übergabe an server
                     writer.flush();             //abschicken
                 }
@@ -57,7 +57,7 @@ public class InputThread implements Runnable
         {
             TextFileWriter.writeError(e);
             System.out.println("   An error has Occurred!\n" +
-                    "   for more info visit the Error Log!");
+                               "   for more info visit the Error Log!");
         }
         finally
         {
@@ -83,7 +83,7 @@ public class InputThread implements Runnable
             {
                 TextFileWriter.writeError(e);
                 System.out.println("   An error has Occurred!\n"+
-                        "   for more info visit the Error Log!");
+                                   "   for more info visit the Error Log!");
             }
         }
     }

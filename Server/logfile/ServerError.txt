@@ -4026,3 +4026,168 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 # 
 ################################################################################
 
+################################################################################
+# 2014.07.16 at 11:39:30 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:60)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 18:27:52 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 18:29:25 
+# 
+# Exception type: java.net.BindException: Address already in use: JVM_Bind
+#
+# java.net.DualStackPlainSocketImpl.bind0(Native Method)
+# java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+# java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+# java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+# java.net.ServerSocket.bind(ServerSocket.java:375)
+# java.net.ServerSocket.<init>(ServerSocket.java:237)
+# java.net.ServerSocket.<init>(ServerSocket.java:128)
+# de.blauePandas.LMSServer.Server.main(Server.java:50)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 18:29:44 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 18:30:06 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 18:32:03 
+# 
+# Exception type: java.net.BindException: Address already in use: JVM_Bind
+#
+# java.net.DualStackPlainSocketImpl.bind0(Native Method)
+# java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+# java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+# java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+# java.net.ServerSocket.bind(ServerSocket.java:375)
+# java.net.ServerSocket.<init>(ServerSocket.java:237)
+# java.net.ServerSocket.<init>(ServerSocket.java:128)
+# de.blauePandas.LMSServer.Server.main(Server.java:50)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 18:32:18 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:64)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 18:33:49 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:64)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 18:49:49 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:62)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 18:50:49 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:62)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+

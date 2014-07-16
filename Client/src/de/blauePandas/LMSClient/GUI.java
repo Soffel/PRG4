@@ -36,8 +36,8 @@ public class GUI extends Application
 {
     private static Socket client = null;
 
-    private static ArrayList<String> output = new ArrayList<>();
-    private static ArrayList<String> input  = new ArrayList<>();
+    private static ArrayList<String> output = new ArrayList<>();    //speichert Serverrückgaben
+    private static ArrayList<String> input  = new ArrayList<>();    //speichert gesendete Eingaben
 
     private static int KEY = 1;
 
@@ -54,51 +54,73 @@ public class GUI extends Application
     private Button buttonsend;
 
 
+    /***********************************************************************************************************************
+     * GUI
+     */
     @Override
     public void start(Stage stage)
     {
         try
         {
-            output.add("Client started successfully\r\n");
+            stage.setTitle("blaue Pandas - Lagermanagementsystem");//setzt FensterTitel
+            stage.getIcons().add(new Image("file:images/2.png"));//setzt Panda-Icon
 
-            stage.setTitle("blaue Pandas - Lagermanagementsystem");
-            stage.getIcons().add(new Image("file:images/2.png"));
+             /*
+                laden des FXML-Files & setzen des Controllers
+             */
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("view/LMS.fxml"));
             loader.setController(this);
             AnchorPane LMS = loader.load();
 
 
+            output.add("Client started successfully\r\n");  //add meldung das Client(GUI) erfolgreich gestartet wurde
+            outputarea.setText(output.get(0));//erste Azsgabe das Cliebt erfolgreich gestartet wurde
 
-            outputarea.setText(output.get(0));
 
             writer = new PrintWriter(client.getOutputStream());
             reader = new BufferedReader(new InputStreamReader(client.getInputStream()));
+
+            /*
+                Senden - Button wurde gedrückt - Event
+             */
 
             buttonsend.setOnAction(new EventHandler<ActionEvent>()
             {
                 @Override
                 public void handle(ActionEvent actionEvent)
                 {
-                    String inputStream = inputarea.getText();
+                    String inputStream = inputarea.getText(); //hohlen des Inputs aus dem Eingabefeld
 
-                    if(!inputStream.isEmpty())
+                    if(!inputStream.isEmpty())// kontrolle ob etwas im Eingabefeld stand
                     {
-                        input.add(inputStream);
-                        TextFileWriter.systemLog(inputStream);
+                        input.add(inputStream); // hinzufügen in die input-history
+                        TextFileWriter.systemLog(inputStream);  //hinzufügen in den Systemlog
 
                         writer.write(inputStream + "\n"); //übergabe an server
                         writer.flush();//abschicken
 
+                        KEY = 1;//rücksetzen des KEY-wertes
+
+                         /*
+                            mit der folgenden Lösung bin ich selbst nicht ganz zufrieden da auch eine Nachricht von Server kommen könnte
+                            obwohl kein Befehl gesendet wurde,
+                            leider scheint die Threadlösung (siehe Client) bei GUI's nicht zu funktionieren
+                         */
+
                         try
                         {
-                            String out = reader.readLine();
+                            String out = reader.readLine(); // Auslesen der Serverrückgabe
 
                             if (!out.isEmpty())
                             {
-                                output.add(out + "\r\n");
+                                output.add(out + "\r\n"); // hinzufügen in output-history
 
                                 String print = "";
+
+                                 /*
+                                    Ausgabe der History im Output-Feld (max die letzten 17 Einträge)
+                                 */
 
                                 if (output.size() >= 17)
                                     for (int index = output.size() - 17; index < output.size(); index++)
@@ -111,86 +133,98 @@ public class GUI extends Application
                                         print += anOutput;
                                     }
 
-                                outputarea.setText(print);
+                                outputarea.setText(print);//Ausgabe in output-Feld
                             }
                         }
                         catch (IOException e)
                         {
                             TextFileWriter.writeError(e);
                             System.out.println("   An error has Occurred!\n" +
-                                               "   for more info visit the Error Log!");
+                                    "   for more info visit the Error Log!");
                         }
                     }
                 }
             });
 
+             /*
+                Abfangen von Key-Events (Enter zum Absenden & Pfeiltasten up & Down zum navigieren in input-history)
+             */
+
             inputarea.addEventHandler(KeyEvent.KEY_PRESSED, new EventHandler<KeyEvent>()
             {
                 public void handle(KeyEvent keyEvent)
                 {
-                   if(keyEvent.getCode() == KeyCode.valueOf("ENTER"))
-                   {
-                       String inputStream = inputarea.getText();
+                     /*
+                       gleche funktion wie beim drücken des Senden-Buttons, nur duch drücken der Enter-taste
+                    */
+                    if(keyEvent.getCode() == KeyCode.valueOf("ENTER"))
+                    {
+                        String inputStream = inputarea.getText();
 
-                       if(!inputStream.isEmpty())
-                       {
-                           input.add(inputStream);
-                           TextFileWriter.systemLog(inputStream);
+                        if(!inputStream.isEmpty())
+                        {
+                            input.add(inputStream);
+                            TextFileWriter.systemLog(inputStream);
 
-                           writer.write(inputStream + "\n"); //übergabe an server
-                           writer.flush();//abschicken
+                            writer.write(inputStream + "\n"); //übergabe an server
+                            writer.flush();//abschicken
 
-                           try
-                           {
-                               String out = reader.readLine();
+                            KEY = 1;//rücksetzen des KEY-wertes
 
-                               if (!out.isEmpty())
-                               {
-                                   output.add(out + "\r\n");
+                            try
+                            {
+                                String out = reader.readLine();
 
-                                   String print = "";
+                                if (!out.isEmpty())
+                                {
+                                    output.add(out + "\r\n");
 
-                                   if (output.size() >= 17)
-                                       for (int index = output.size() - 17; index < output.size(); index++)
-                                       {
-                                           print += output.get(index);
-                                       }
-                                   else
-                                       for (String anOutput : output)
-                                       {
-                                           print += anOutput;
-                                       }
+                                    String print = "";
 
-                                   outputarea.setText(print);
-                               }
-                           }
-                           catch (IOException e)
-                           {
-                               TextFileWriter.writeError(e);
-                               System.out.println("   An error has Occurred!\n" +
-                                                  "   for more info visit the Error Log!");
-                           }
-                       }
-                   }
+                                    if (output.size() >= 17)
+                                        for (int index = output.size() - 17; index < output.size(); index++)
+                                        {
+                                            print += output.get(index);
+                                        }
+                                    else
+                                        for (String anOutput : output)
+                                        {
+                                            print += anOutput;
+                                        }
 
-                   if(keyEvent.getCode() == KeyCode.valueOf("UP"))
-                   {
+                                    outputarea.setText(print);
+                                }
+                            }
+                            catch (IOException e)
+                            {
+                                TextFileWriter.writeError(e);
+                                System.out.println("   An error has Occurred!\n" +
+                                        "   for more info visit the Error Log!");
+                            }
+                        }
+                    }
+
+                     /*
+                        navigieren in der input-history mittels Pfeiltasten (Up & Down)
+                     */
+                    if(keyEvent.getCode() == KeyCode.valueOf("UP"))
+                    {
                         if(KEY < input.size())
                             KEY++;
 
                         if(input.size() > 1)
                             inputarea.setText(input.get(input.size()-KEY));
-                   }
+                    }
 
 
-                   if(keyEvent.getCode() == KeyCode.valueOf("DOWN"))
-                   {
+                    if(keyEvent.getCode() == KeyCode.valueOf("DOWN"))
+                    {
                         if(KEY > 1)
                             KEY--;
 
                         if(input.size() > 1)
                             inputarea.setText(input.get(input.size()-KEY));
-                   }
+                    }
 
                     /* TESTAUSGABE
 
@@ -202,32 +236,38 @@ public class GUI extends Application
             });
 
             stage.setScene(new Scene(LMS));
-            stage.show();
+            stage.show(); //das eigendliche "starten" der GUI
 
         }
         catch (Exception e)
         {
             TextFileWriter.writeError(e);
             System.out.println("   An error has Occurred!\n" +
-                               "   for more info visit the Error Log!");
+                    "   for more info visit the Error Log!");
         }
 
     }
 
 
+    /***********************************************************************************************************************
+     * Main
+     *  verbindet GUI mit Sever & startet diese
+     *  Server muss zum starten der GUI aktiv sein !
+     */
+
     public static void main(String[] _args)
     {
         try
         {
-            client = new Socket("localhost", 12345 );
+            client = new Socket("localhost", 12345 ); //verbinden zum Server
 
-            launch(_args);
+            launch(_args);//starten der GUI
         }
         catch(Exception e)
         {
             TextFileWriter.writeError(e);
             System.out.println("   An error has Occurred!\n" +
-                               "   for more info visit the Error Log!");
+                    "   for more info visit the Error Log!");
         }
     }
 }
