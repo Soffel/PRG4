@@ -57,7 +57,7 @@ public class InputThread implements Runnable
         {
             TextFileWriter.writeError(e);
             System.out.println("   An error has Occurred!\n" +
-                               "   for more info visit the Error Log!");
+                    "   for more info visit the Error Log!");
         }
         finally
         {
@@ -83,9 +83,8 @@ public class InputThread implements Runnable
             {
                 TextFileWriter.writeError(e);
                 System.out.println("   An error has Occurred!\n"+
-                                   "   for more info visit the Error Log!");
+                        "   for more info visit the Error Log!");
             }
         }
     }
 }
-

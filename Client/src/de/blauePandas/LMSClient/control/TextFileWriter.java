@@ -19,7 +19,6 @@ public class TextFileWriter
     private static String ERROR_FILE    = "Client/logfile/ClientError.txt";
     private static String LOG_FILE      = "Client/logfile/ClientSystemlog.txt";
 
-
     private static String StringBuild(Exception _error)
     {
         StringBuilder stringBuilder         = new StringBuilder();
@@ -105,5 +104,6 @@ public class TextFileWriter
             }
         }
     }
+
 
 }

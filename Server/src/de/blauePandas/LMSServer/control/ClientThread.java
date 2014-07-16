@@ -51,9 +51,6 @@ public class ClientThread implements Runnable
             writer  = new PrintWriter(client.getOutputStream());
             reader  = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
-            writer.write("<<"+Thread.currentThread().getName() + ">>  Successfully Serverconnection\n");
-            writer.flush();
-
             System.out.println("<<" + Thread.currentThread().getName() + ">> Successfully Clientconnection");
             TextFileWriter.systemLog( Thread.currentThread().getName() + " Successfully connection");
 

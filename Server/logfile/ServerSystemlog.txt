@@ -1,0 +1,678 @@
+2014.06.17 at 17:57:41  >> Server started successfully
+2014.06.17 at 17:58:09  >> pool-1-thread-1 Successfully connection
+2014.06.17 at 18:01:27  >> pool-1-thread-2 Successfully connection
+2014.06.17 at 18:11:28  >> pool-1-thread-3 Successfully connection
+2014.06.17 at 18:12:57  >> pool-1-thread-1 Successfully connection
+2014.06.17 at 18:15:19  >> pool-1-thread-2 Successfully connection
+2014.06.17 at 18:17:39  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 14:42:50  >> Server started successfully
+2014.07.15 at 14:43:47  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 14:43:55  >> INPUT: pool-1-thread-1 hi server
+2014.07.15 at 14:44:03  >> INPUT: pool-1-thread-1 echo hi server
+2014.07.15 at 15:04:00  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 15:05:03  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 15:07:20  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 15:10:51  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 15:12:03  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 15:15:12  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 15:16:04  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 15:17:44  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 15:19:11  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 15:19:26  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 15:26:03  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 15:26:40  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 15:28:31  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 15:28:50  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 17:09:59  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 17:23:26  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 17:23:27  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 17:23:32  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 17:26:21  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 17:27:20  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 17:35:26  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 17:57:15  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 17:57:30  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 17:57:47  >> Server started successfully
+2014.07.15 at 17:57:51  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 17:59:44  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:00:26  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 18:01:15  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 18:01:34  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:03:31  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 18:06:19  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 18:07:11  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:07:48  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 18:11:27  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 18:13:43  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:13:54  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 18:23:07  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:23:23  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 18:23:31  >> INPUT: pool-1-thread-1 echo hallo
+2014.07.15 at 18:33:09  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 18:33:34  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:34:44  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:38:57  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:40:17  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:41:14  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:41:27  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 18:41:52  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 18:42:43  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:43:04  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 18:43:12  >> INPUT: pool-1-thread-1 echo hallo server
+2014.07.15 at 18:44:23  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 18:46:22  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 18:46:41  >> INPUT: pool-1-thread-2 echo hallo server
+2014.07.15 at 18:49:35  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 18:51:12  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 18:56:01  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 18:56:07  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 19:02:46  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 19:02:56  >> INPUT: pool-1-thread-3 echo Jana ist toll
+2014.07.15 at 19:05:00  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 19:05:09  >> INPUT: pool-1-thread-3 echo hallo server
+2014.07.15 at 19:09:09  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 19:10:23  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 19:11:03  >> INPUT: pool-1-thread-3 echo hh
+2014.07.15 at 19:16:26  >> Server started successfully
+2014.07.15 at 19:16:34  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 19:16:48  >> INPUT: pool-1-thread-1 echo hallo server
+2014.07.15 at 19:20:19  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 19:47:55  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 19:48:17  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 19:50:57  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 19:52:52  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 19:53:05  >> Server started successfully
+2014.07.15 at 19:53:14  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 19:54:03  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 20:00:17  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 20:00:46  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 20:11:17  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 20:11:46  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 20:28:35  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 20:29:47  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 20:30:06  >> INPUT: pool-1-thread-1 java.net.SocketInputStream@1c170f0
+2014.07.15 at 20:30:20  >> INPUT: pool-1-thread-1 java.net.SocketInputStream@1c170f0
+2014.07.15 at 20:30:33  >> INPUT: pool-1-thread-1 java.net.SocketInputStream@1c170f0
+2014.07.15 at 20:30:38  >> INPUT: pool-1-thread-1 java.net.SocketInputStream@1c170f0
+2014.07.15 at 20:31:14  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 20:31:25  >> INPUT: pool-1-thread-3 g
+2014.07.15 at 20:32:09  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 20:32:13  >> INPUT: pool-1-thread-2 k
+2014.07.15 at 20:32:48  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 20:32:57  >> INPUT: pool-1-thread-1 hi
+2014.07.15 at 20:33:00  >> INPUT: pool-1-thread-1 hi
+2014.07.15 at 20:33:03  >> INPUT: pool-1-thread-1 echo
+2014.07.15 at 20:33:03  >> INPUT: pool-1-thread-1 hi
+2014.07.15 at 20:35:08  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 20:35:18  >> INPUT: pool-1-thread-3 hi
+2014.07.15 at 20:35:21  >> INPUT: pool-1-thread-3 echo hi
+2014.07.15 at 20:50:38  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 20:50:45  >> INPUT: pool-1-thread-2 echo hallo server
+2014.07.15 at 20:55:05  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 20:55:53  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 20:58:31  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:03:26  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:03:27  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 21:03:27  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:03:28  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:03:28  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 21:03:28  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:03:28  >> INPUT: pool-1-thread-1 j
+2014.07.15 at 21:03:35  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:04:16  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 21:05:49  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:10:37  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:10:38  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 21:10:38  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:10:38  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:10:38  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 21:10:39  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:10:46  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:17:19  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 21:18:46  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:25:32  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:25:32  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 21:25:32  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:25:32  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:25:32  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 21:25:33  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:25:37  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:27:14  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 21:31:37  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:46:26  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 21:52:10  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:53:10  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:53:49  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:57:48  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:58:32  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 21:59:10  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 22:12:49  >> Server started successfully
+2014.07.15 at 22:12:55  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 22:13:21  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 22:21:34  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 22:22:38  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 22:41:12  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 22:42:50  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 22:44:22  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 22:47:56  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 22:49:32  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 22:50:01  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 22:50:11  >> INPUT: pool-1-thread-1 echo hallo server
+2014.07.15 at 22:54:49  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 22:54:57  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:00  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:01  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:01  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:01  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:02  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:03  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:03  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:03  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:04  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:04  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:04  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:55:04  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 22:56:04  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 22:56:15  >> INPUT: pool-1-thread-3 echo hallo
+2014.07.15 at 22:56:16  >> INPUT: pool-1-thread-3 echo hallo
+2014.07.15 at 23:03:44  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 23:03:53  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:55  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:55  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:56  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:56  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:57  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:57  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:57  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:57  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:57  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:57  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:58  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:03:58  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:04:25  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 23:04:32  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 23:04:35  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 23:04:35  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 23:04:36  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.15 at 23:09:22  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 23:10:00  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 23:10:08  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.15 at 23:14:35  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 23:14:42  >> INPUT: pool-1-thread-3 echo hallo
+2014.07.15 at 23:14:44  >> INPUT: pool-1-thread-3 echo hallo
+2014.07.15 at 23:14:46  >> INPUT: pool-1-thread-3 echo hallo
+2014.07.15 at 23:14:48  >> INPUT: pool-1-thread-3 echo hallo
+2014.07.15 at 23:14:49  >> INPUT: pool-1-thread-3 echo hallo
+2014.07.15 at 23:14:56  >> INPUT: pool-1-thread-3 echo duda
+2014.07.15 at 23:14:58  >> INPUT: pool-1-thread-3 echo duda
+2014.07.15 at 23:15:01  >> INPUT: pool-1-thread-3 echo duda
+2014.07.15 at 23:15:01  >> INPUT: pool-1-thread-3 echo duda
+2014.07.15 at 23:15:02  >> INPUT: pool-1-thread-3 echo duda
+2014.07.15 at 23:15:02  >> INPUT: pool-1-thread-3 echo duda
+2014.07.15 at 23:15:06  >> INPUT: pool-1-thread-3 echo 123
+2014.07.15 at 23:15:09  >> INPUT: pool-1-thread-3 echo 123
+2014.07.15 at 23:16:16  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 23:16:36  >> INPUT: pool-1-thread-2 echo hallo
+2014.07.15 at 23:16:37  >> INPUT: pool-1-thread-2 echo hallo
+2014.07.15 at 23:17:03  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 23:17:11  >> INPUT: pool-1-thread-1 echo hallo
+2014.07.15 at 23:17:19  >> INPUT: pool-1-thread-1 echo ddd
+2014.07.15 at 23:18:30  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 23:18:39  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.15 at 23:18:41  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.15 at 23:18:48  >> INPUT: pool-1-thread-3 echo du
+2014.07.15 at 23:18:49  >> INPUT: pool-1-thread-3 echo du
+2014.07.15 at 23:18:57  >> INPUT: pool-1-thread-3 echo blun
+2014.07.15 at 23:18:58  >> INPUT: pool-1-thread-3 echo blun
+2014.07.15 at 23:19:00  >> INPUT: pool-1-thread-3 echo blun
+2014.07.15 at 23:19:00  >> INPUT: pool-1-thread-3 echo blun
+2014.07.15 at 23:19:00  >> INPUT: pool-1-thread-3 echo blun
+2014.07.15 at 23:19:25  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 23:19:33  >> INPUT: pool-1-thread-2 echo hallo
+2014.07.15 at 23:38:53  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 23:39:01  >> INPUT: pool-1-thread-1 echo hallo
+2014.07.15 at 23:39:10  >> INPUT: pool-1-thread-1 login 
+2014.07.15 at 23:44:42  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 23:44:58  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 23:45:05  >> pool-1-thread-3 Successfully connection
+2014.07.15 at 23:45:12  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.15 at 23:45:16  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.15 at 23:45:17  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.15 at 23:45:17  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.15 at 23:45:17  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.15 at 23:46:25  >> pool-1-thread-2 Successfully connection
+2014.07.15 at 23:46:32  >> INPUT: pool-1-thread-2 echo HAllo
+2014.07.15 at 23:46:55  >> pool-1-thread-1 Successfully connection
+2014.07.15 at 23:47:01  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:03:59  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 00:04:06  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:11  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:12  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:12  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:12  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:13  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:14  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:14  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:15  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:15  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:15  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:16  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:16  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:16  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:17  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:17  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:17  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:17  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:17  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:04:50  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:05:00  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:05:04  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:05:05  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:05:05  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:05:06  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:05:06  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:05:06  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:05:06  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:05:07  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:05:24  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 00:05:31  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:33  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:33  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:34  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:34  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:34  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:35  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:35  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:35  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:35  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:35  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:35  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:36  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:05:36  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:06:16  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:06:24  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:06:27  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:10:12  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:12:22  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:12:47  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 00:12:55  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:56  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:57  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:57  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:57  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:57  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:58  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:58  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:58  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:58  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:58  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:58  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:59  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:59  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:59  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:12:59  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:13:24  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 00:14:28  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:14:37  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:38  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:39  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:39  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:39  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:39  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:40  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:40  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:40  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:40  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:45  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:45  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:45  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:45  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:45  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:46  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:14:46  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:15:38  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 00:15:46  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:15:48  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:15:50  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:15:50  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:15:51  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:15:51  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:15:53  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:15:53  >> INPUT: pool-1-thread-3 echo Hallo
+2014.07.16 at 00:16:42  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 00:16:49  >> INPUT: pool-1-thread-2 echo HAllo
+2014.07.16 at 00:16:58  >> INPUT: pool-1-thread-2 echo blub
+2014.07.16 at 00:17:55  >> Server started successfully
+2014.07.16 at 00:18:45  >> Server started successfully
+2014.07.16 at 00:18:52  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:18:59  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:19:35  >> INPUT: pool-1-thread-1 echo Hallo '\n' wie gehts ?
+2014.07.16 at 00:19:45  >> INPUT: pool-1-thread-1 echo hdi
+2014.07.16 at 00:20:49  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 00:21:01  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 00:21:08  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:21:35  >> INPUT: pool-1-thread-1 echo hallo
+2014.07.16 at 00:22:05  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 00:22:14  >> INPUT: pool-1-thread-2  echo hallo
+2014.07.16 at 00:22:20  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:22:28  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 00:22:32  >> INPUT: pool-1-thread-3 echo hallo
+2014.07.16 at 00:22:50  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:23:02  >> INPUT: pool-1-thread-1 echo hallo
+2014.07.16 at 00:23:12  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 00:23:16  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 00:23:21  >> INPUT: pool-1-thread-2 echo wie gehts?
+2014.07.16 at 00:23:41  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:23:54  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:25:07  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 00:25:27  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:25:35  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 00:31:31  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:31:38  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:40  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:40  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:41  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:41  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:41  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:41  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:41  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:42  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:42  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:42  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:42  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:42  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:42  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:43  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:43  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:43  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:43  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:44  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:44  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:44  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:44  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:44  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:45  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:45  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:45  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:45  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:45  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:45  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:31:48  >> INPUT: pool-1-thread-1 echo HAllo
+2014.07.16 at 00:36:45  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 00:36:55  >> INPUT: pool-1-thread-2 echo HAllo
+2014.07.16 at 00:36:58  >> INPUT: pool-1-thread-2 echo HAllo
+2014.07.16 at 00:36:58  >> INPUT: pool-1-thread-2 echo HAllo
+2014.07.16 at 00:36:58  >> INPUT: pool-1-thread-2 echo HAllo
+2014.07.16 at 00:36:58  >> INPUT: pool-1-thread-2 echo HAllo
+2014.07.16 at 00:37:03  >> INPUT: pool-1-thread-2 clear
+2014.07.16 at 00:37:05  >> INPUT: pool-1-thread-2 clear
+2014.07.16 at 00:37:05  >> INPUT: pool-1-thread-2 clear
+2014.07.16 at 00:37:05  >> INPUT: pool-1-thread-2 clear
+2014.07.16 at 00:37:06  >> INPUT: pool-1-thread-2 clear
+2014.07.16 at 00:40:18  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:40:24  >> INPUT: pool-1-thread-1 echos
+2014.07.16 at 00:40:42  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 00:40:45  >> INPUT: pool-1-thread-3 sdd
+2014.07.16 at 00:40:51  >> INPUT: pool-1-thread-3 echo HAllo
+2014.07.16 at 00:52:24  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 00:52:33  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:33  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:33  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:34  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:34  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:34  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:34  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:34  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:34  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:35  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:35  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:35  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:35  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:35  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:35  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:36  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:36  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:36  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:36  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:36  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:37  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:37  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:37  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:37  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:37  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:52:37  >> INPUT: pool-1-thread-2 exho Hallo
+2014.07.16 at 00:54:41  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 00:54:50  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:50  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:50  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:50  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:50  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:51  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:51  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:51  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:51  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:51  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:51  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:52  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:52  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:52  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:52  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:52  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:53  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:53  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:53  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:53  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:53  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:54  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:54  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 00:54:54  >> INPUT: pool-1-thread-1 j
+2014.07.16 at 01:03:33  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 01:03:37  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:38  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:39  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:39  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:40  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:40  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:40  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:41  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:41  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:42  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:42  >> INPUT: pool-1-thread-3 hzj
+2014.07.16 at 01:03:58  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 01:04:02  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:02  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:03  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:03  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:03  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:04  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:04  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:04  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:04  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:04  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:04  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:05  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:06  >> INPUT: pool-1-thread-2 g
+2014.07.16 at 01:04:25  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 01:04:30  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:31  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:31  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:32  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:33  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:38  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:39  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:39  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:40  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:43  >> INPUT: pool-1-thread-1 jj
+2014.07.16 at 01:04:58  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 01:06:31  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 01:06:40  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:41  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:42  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:42  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:43  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:43  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:44  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:45  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:45  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:46  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:47  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:47  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:47  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:06:48  >> INPUT: pool-1-thread-2 h
+2014.07.16 at 01:07:00  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 01:07:04  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:04  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:05  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:05  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:05  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:06  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:06  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:06  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:07  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:07  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:08  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:08  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:09  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:09  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:09  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:10  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:10  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:10  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:11  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:11  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:11  >> INPUT: pool-1-thread-1 jk
+2014.07.16 at 01:07:22  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 01:07:26  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:26  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:27  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:27  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:27  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:28  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:28  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:28  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:28  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:29  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:29  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:29  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:31  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:31  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:32  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:32  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:33  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:34  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:35  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:35  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:35  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:35  >> INPUT: pool-1-thread-3 j
+2014.07.16 at 01:07:47  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 01:07:53  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:53  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:53  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:54  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:54  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:54  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:55  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:55  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:55  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:55  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:56  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:56  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:56  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:56  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:56  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:56  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:57  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:57  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:57  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:57  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:57  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:58  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:58  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:58  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:58  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:58  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:58  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:59  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 01:07:59  >> INPUT: pool-1-thread-2 k
+2014.07.16 at 10:44:00  >> Server started successfully
+2014.07.16 at 10:44:09  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 10:45:57  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 10:46:28  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 10:50:15  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 10:51:26  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 10:51:50  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 10:54:33  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 10:55:44  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 10:55:52  >> INPUT: pool-1-thread-2 echo Hallo
+2014.07.16 at 10:56:25  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:25  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:26  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:26  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:26  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:26  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:26  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:26  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:27  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:27  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:27  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:27  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:27  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:27  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:28  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:28  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:28  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:28  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:28  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:28  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:29  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:29  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:56:29  >> INPUT: pool-1-thread-2 echo Hallo H
+2014.07.16 at 10:57:05  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 11:03:25  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 11:03:30  >> INPUT: pool-1-thread-1 1
+2014.07.16 at 11:03:33  >> INPUT: pool-1-thread-1 12
+2014.07.16 at 11:03:37  >> INPUT: pool-1-thread-1 123
+2014.07.16 at 11:03:40  >> INPUT: pool-1-thread-1 1234
+2014.07.16 at 11:03:41  >> INPUT: pool-1-thread-1 12345
+2014.07.16 at 11:04:37  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 11:04:43  >> INPUT: pool-1-thread-2 1
+2014.07.16 at 11:04:46  >> INPUT: pool-1-thread-2 12
+2014.07.16 at 11:04:47  >> INPUT: pool-1-thread-2 123
+2014.07.16 at 11:04:47  >> INPUT: pool-1-thread-2 1234
+2014.07.16 at 11:05:32  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 11:05:35  >> INPUT: pool-1-thread-3 1
+2014.07.16 at 11:05:36  >> INPUT: pool-1-thread-3 12
+2014.07.16 at 11:06:17  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 11:06:22  >> INPUT: pool-1-thread-1 1
+2014.07.16 at 11:06:23  >> INPUT: pool-1-thread-1 12
+2014.07.16 at 11:06:23  >> INPUT: pool-1-thread-1 123
+2014.07.16 at 11:07:12  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 11:07:18  >> INPUT: pool-1-thread-3 1
+2014.07.16 at 11:07:19  >> INPUT: pool-1-thread-3 12
+2014.07.16 at 11:07:53  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 11:09:09  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 11:09:12  >> INPUT: pool-1-thread-1 1
+2014.07.16 at 11:09:25  >> INPUT: pool-1-thread-1 1
+2014.07.16 at 11:10:22  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 11:10:25  >> INPUT: pool-1-thread-3 1
+2014.07.16 at 11:10:28  >> INPUT: pool-1-thread-3 21
+2014.07.16 at 11:10:45  >> INPUT: pool-1-thread-3 21asasasa
+2014.07.16 at 11:11:50  >> pool-1-thread-2 Successfully connection
+2014.07.16 at 11:11:53  >> INPUT: pool-1-thread-2 1
+2014.07.16 at 11:11:55  >> INPUT: pool-1-thread-2 12
+2014.07.16 at 11:11:58  >> INPUT: pool-1-thread-2 123
+2014.07.16 at 11:12:06  >> INPUT: pool-1-thread-2 123
+2014.07.16 at 11:13:59  >> pool-1-thread-1 Successfully connection
+2014.07.16 at 11:14:05  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 11:14:07  >> INPUT: pool-1-thread-1 echo Hallo
+2014.07.16 at 11:14:09  >> INPUT: pool-1-thread-1 echo Hallo1
+2014.07.16 at 11:14:10  >> INPUT: pool-1-thread-1 echo Hallo12
+2014.07.16 at 11:15:07  >> pool-1-thread-3 Successfully connection
+2014.07.16 at 11:15:13  >> INPUT: pool-1-thread-3 echo 1
+2014.07.16 at 11:15:15  >> INPUT: pool-1-thread-3 echo 12
+2014.07.16 at 11:15:16  >> INPUT: pool-1-thread-3 echo 123
+2014.07.16 at 11:15:17  >> INPUT: pool-1-thread-3 echo 1234
+2014.07.16 at 11:15:17  >> INPUT: pool-1-thread-3 echo 12345
+2014.07.16 at 11:15:18  >> INPUT: pool-1-thread-3 echo 123456
+2014.07.16 at 11:15:19  >> INPUT: pool-1-thread-3 echo 1234567
+2014.07.16 at 11:15:32  >> INPUT: pool-1-thread-3 echo 12345

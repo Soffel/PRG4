@@ -17,11 +17,10 @@ import java.util.concurrent.Executors;
  */
 public class Client
 {
-    public static void stop()
-    { // ich weis das das so nicht sonderlich schön ist ^^
+    public static void stopClient()
+    {
         System.exit(0);
     }
-
 
     public static void main(String[] _args)
     {
@@ -29,7 +28,7 @@ public class Client
         {
             Socket client = new Socket("localhost", 12345 );
 
-            System.out.println("   Client started successfully");
+            System.out.print("   Client started successfully \n>> ");
             TextFileWriter.systemLog("Client started successfully");
 
             ExecutorService executorService = Executors.newFixedThreadPool(2);
@@ -41,7 +40,7 @@ public class Client
         {
             TextFileWriter.writeError(e);
             System.out.println("   An error has Occurred!\n" +
-                               "   for more info visit the Error Log!");
+                    "   for more info visit the Error Log!");
         }
     }
 }

@@ -1,0 +1,732 @@
+################################################################################
+# 2014.07.15 at 15:26:04 
+# 
+# Exception type: java.lang.RuntimeException: Exception in Application start method
+#
+# com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:894)
+# com.sun.javafx.application.LauncherImpl.access$000(LauncherImpl.java:56)
+# com.sun.javafx.application.LauncherImpl$1.run(LauncherImpl.java:158)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 17:57:15 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:64)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 17:57:30 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:64)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 17:57:51 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:64)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:00:26 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:66)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:01:15 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:01:34 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:51)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:03:31 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:06:19 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:07:11 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:13:43 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.getOut(OutputThread.java:26)
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:70)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:13:54 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.getOut(OutputThread.java:26)
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:70)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:23:07 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.getOut(OutputThread.java:26)
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:70)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:33:34 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:67)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:34:44 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:67)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:38:58 
+# 
+# Exception type: java.lang.RuntimeException: Exception in Application start method
+#
+# com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:894)
+# com.sun.javafx.application.LauncherImpl.access$000(LauncherImpl.java:56)
+# com.sun.javafx.application.LauncherImpl$1.run(LauncherImpl.java:158)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:41:14 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:66)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:41:27 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:66)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:41:52 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:66)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:42:43 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:66)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:46:22 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.Client.start(Client.java:56)
+# com.sun.javafx.application.LauncherImpl$8.run(LauncherImpl.java:837)
+# com.sun.javafx.application.PlatformImpl$7.run(PlatformImpl.java:335)
+# com.sun.javafx.application.PlatformImpl$6$1.run(PlatformImpl.java:301)
+# com.sun.javafx.application.PlatformImpl$6$1.run(PlatformImpl.java:298)
+# java.security.AccessController.doPrivileged(Native Method)
+# com.sun.javafx.application.PlatformImpl$6.run(PlatformImpl.java:298)
+# com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+# com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+# com.sun.glass.ui.win.WinApplication.access$300(WinApplication.java:39)
+# com.sun.glass.ui.win.WinApplication$4$1.run(WinApplication.java:112)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 18:53:33 
+# 
+# Exception type: javafx.fxml.LoadException: 
+/C:/Users/Andre/IdeaProjects/PRG4/out/production/Client/de/blauePandas/LMSClient/view/LMS.fxml:28
+
+#
+# javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2617)
+# javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2595)
+# javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+# javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+# de.blauePandas.LMSClient.Client.start(Client.java:48)
+# com.sun.javafx.application.LauncherImpl$8.run(LauncherImpl.java:837)
+# com.sun.javafx.application.PlatformImpl$7.run(PlatformImpl.java:335)
+# com.sun.javafx.application.PlatformImpl$6$1.run(PlatformImpl.java:301)
+# com.sun.javafx.application.PlatformImpl$6$1.run(PlatformImpl.java:298)
+# java.security.AccessController.doPrivileged(Native Method)
+# com.sun.javafx.application.PlatformImpl$6.run(PlatformImpl.java:298)
+# com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+# com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+# com.sun.glass.ui.win.WinApplication.access$300(WinApplication.java:39)
+# com.sun.glass.ui.win.WinApplication$4$1.run(WinApplication.java:112)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 19:02:56 
+# 
+# Exception type: java.lang.IllegalStateException: Not on FX application thread; currentThread = pool-2-thread-2
+#
+# com.sun.javafx.tk.Toolkit.checkFxUserThread(Toolkit.java:210)
+# com.sun.javafx.tk.quantum.QuantumToolkit.checkFxUserThread(QuantumToolkit.java:393)
+# javafx.scene.Scene.addToDirtyList(Scene.java:529)
+# javafx.scene.Node.addToSceneDirtyList(Node.java:417)
+# javafx.scene.Node.impl_markDirty(Node.java:408)
+# javafx.scene.shape.Shape.impl_markDirty(Shape.java:930)
+# javafx.scene.Node.impl_geomChanged(Node.java:3758)
+# javafx.scene.text.Text.impl_geomChanged(Text.java:772)
+# javafx.scene.text.Text.needsTextLayout(Text.java:202)
+# javafx.scene.text.Text.needsFullTextLayout(Text.java:197)
+# javafx.scene.text.Text.access$400(Text.java:96)
+# javafx.scene.text.Text$4.invalidated(Text.java:396)
+# javafx.beans.property.StringPropertyBase.markInvalid(StringPropertyBase.java:109)
+# javafx.beans.property.StringPropertyBase.access$000(StringPropertyBase.java:49)
+# javafx.beans.property.StringPropertyBase$Listener.invalidated(StringPropertyBase.java:229)
+# com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:135)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.beans.binding.StringBinding.invalidate(StringBinding.java:171)
+# com.sun.javafx.binding.BindingHelperObserver.invalidated(BindingHelperObserver.java:51)
+# com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:339)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.scene.control.TextInputControl$TextProperty.fireValueChangedEvent(TextInputControl.java:1116)
+# javafx.scene.control.TextInputControl$TextProperty.markInvalid(TextInputControl.java:1120)
+# javafx.scene.control.TextInputControl$TextProperty.invalidate(TextInputControl.java:1060)
+# javafx.scene.control.TextInputControl$TextProperty.access$200(TextInputControl.java:1032)
+# javafx.scene.control.TextInputControl$1.invalidated(TextInputControl.java:130)
+# com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:135)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.scene.control.TextField$TextFieldContent.insert(TextField.java:82)
+# javafx.scene.control.TextInputControl$TextProperty.doSet(TextInputControl.java:1129)
+# javafx.scene.control.TextInputControl$TextProperty.set(TextInputControl.java:1055)
+# javafx.scene.control.TextInputControl.setText(TextInputControl.java:279)
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 19:05:09 
+# 
+# Exception type: java.lang.IllegalStateException: Not on FX application thread; currentThread = pool-2-thread-2
+#
+# com.sun.javafx.tk.Toolkit.checkFxUserThread(Toolkit.java:210)
+# com.sun.javafx.tk.quantum.QuantumToolkit.checkFxUserThread(QuantumToolkit.java:393)
+# javafx.scene.Scene.addToDirtyList(Scene.java:529)
+# javafx.scene.Node.addToSceneDirtyList(Node.java:417)
+# javafx.scene.Node.impl_markDirty(Node.java:408)
+# javafx.scene.shape.Shape.impl_markDirty(Shape.java:930)
+# javafx.scene.Node.impl_geomChanged(Node.java:3758)
+# javafx.scene.text.Text.impl_geomChanged(Text.java:772)
+# javafx.scene.text.Text.needsTextLayout(Text.java:202)
+# javafx.scene.text.Text.needsFullTextLayout(Text.java:197)
+# javafx.scene.text.Text.access$400(Text.java:96)
+# javafx.scene.text.Text$4.invalidated(Text.java:396)
+# javafx.beans.property.StringPropertyBase.markInvalid(StringPropertyBase.java:109)
+# javafx.beans.property.StringPropertyBase.access$000(StringPropertyBase.java:49)
+# javafx.beans.property.StringPropertyBase$Listener.invalidated(StringPropertyBase.java:229)
+# com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:135)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.beans.binding.StringBinding.invalidate(StringBinding.java:171)
+# com.sun.javafx.binding.BindingHelperObserver.invalidated(BindingHelperObserver.java:51)
+# com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:339)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.scene.control.TextInputControl$TextProperty.fireValueChangedEvent(TextInputControl.java:1116)
+# javafx.scene.control.TextInputControl$TextProperty.markInvalid(TextInputControl.java:1120)
+# javafx.scene.control.TextInputControl$TextProperty.invalidate(TextInputControl.java:1060)
+# javafx.scene.control.TextInputControl$TextProperty.access$200(TextInputControl.java:1032)
+# javafx.scene.control.TextInputControl$1.invalidated(TextInputControl.java:130)
+# com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:135)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.scene.control.TextField$TextFieldContent.insert(TextField.java:82)
+# javafx.scene.control.TextInputControl$TextProperty.doSet(TextInputControl.java:1129)
+# javafx.scene.control.TextInputControl$TextProperty.set(TextInputControl.java:1055)
+# javafx.scene.control.TextInputControl.setText(TextInputControl.java:279)
+# de.blauePandas.LMSClient.Client.Outputarea(Client.java:35)
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 19:11:03 
+# 
+# Exception type: java.lang.IllegalStateException: Not on FX application thread; currentThread = pool-2-thread-2
+#
+# com.sun.javafx.tk.Toolkit.checkFxUserThread(Toolkit.java:210)
+# com.sun.javafx.tk.quantum.QuantumToolkit.checkFxUserThread(QuantumToolkit.java:393)
+# javafx.scene.Scene.addToDirtyList(Scene.java:529)
+# javafx.scene.Node.addToSceneDirtyList(Node.java:417)
+# javafx.scene.Node.impl_markDirty(Node.java:408)
+# javafx.scene.shape.Shape.impl_markDirty(Shape.java:930)
+# javafx.scene.Node.impl_geomChanged(Node.java:3758)
+# javafx.scene.text.Text.impl_geomChanged(Text.java:772)
+# javafx.scene.text.Text.needsTextLayout(Text.java:202)
+# javafx.scene.text.Text.needsFullTextLayout(Text.java:197)
+# javafx.scene.text.Text.access$400(Text.java:96)
+# javafx.scene.text.Text$4.invalidated(Text.java:396)
+# javafx.beans.property.StringPropertyBase.markInvalid(StringPropertyBase.java:109)
+# javafx.beans.property.StringPropertyBase.access$000(StringPropertyBase.java:49)
+# javafx.beans.property.StringPropertyBase$Listener.invalidated(StringPropertyBase.java:229)
+# com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:135)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.beans.binding.StringBinding.invalidate(StringBinding.java:171)
+# com.sun.javafx.binding.BindingHelperObserver.invalidated(BindingHelperObserver.java:51)
+# com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:339)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.scene.control.TextInputControl$TextProperty.fireValueChangedEvent(TextInputControl.java:1116)
+# javafx.scene.control.TextInputControl$TextProperty.markInvalid(TextInputControl.java:1120)
+# javafx.scene.control.TextInputControl$TextProperty.invalidate(TextInputControl.java:1060)
+# javafx.scene.control.TextInputControl$TextProperty.access$200(TextInputControl.java:1032)
+# javafx.scene.control.TextInputControl$1.invalidated(TextInputControl.java:130)
+# com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:135)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.scene.control.TextField$TextFieldContent.insert(TextField.java:82)
+# javafx.scene.control.TextInputControl$TextProperty.doSet(TextInputControl.java:1129)
+# javafx.scene.control.TextInputControl$TextProperty.set(TextInputControl.java:1055)
+# javafx.scene.control.TextInputControl.setText(TextInputControl.java:279)
+# de.blauePandas.LMSClient.Client.Outputarea(Client.java:35)
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 19:11:50 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:51)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 19:16:15 
+# 
+# Exception type: java.net.ConnectException: Connection refused: connect
+#
+# java.net.DualStackPlainSocketImpl.connect0(Native Method)
+# java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+# java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+# java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+# java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+# java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+# java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+# java.net.Socket.connect(Socket.java:589)
+# java.net.Socket.connect(Socket.java:538)
+# java.net.Socket.<init>(Socket.java:434)
+# java.net.Socket.<init>(Socket.java:211)
+# de.blauePandas.LMSClient.Client.start(Client.java:53)
+# com.sun.javafx.application.LauncherImpl$8.run(LauncherImpl.java:837)
+# com.sun.javafx.application.PlatformImpl$7.run(PlatformImpl.java:335)
+# com.sun.javafx.application.PlatformImpl$6$1.run(PlatformImpl.java:301)
+# com.sun.javafx.application.PlatformImpl$6$1.run(PlatformImpl.java:298)
+# java.security.AccessController.doPrivileged(Native Method)
+# com.sun.javafx.application.PlatformImpl$6.run(PlatformImpl.java:298)
+# com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95)
+# com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+# com.sun.glass.ui.win.WinApplication.access$300(WinApplication.java:39)
+# com.sun.glass.ui.win.WinApplication$4$1.run(WinApplication.java:112)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 19:16:48 
+# 
+# Exception type: java.lang.IllegalStateException: Not on FX application thread; currentThread = pool-2-thread-2
+#
+# com.sun.javafx.tk.Toolkit.checkFxUserThread(Toolkit.java:210)
+# com.sun.javafx.tk.quantum.QuantumToolkit.checkFxUserThread(QuantumToolkit.java:393)
+# javafx.scene.Scene.addToDirtyList(Scene.java:529)
+# javafx.scene.Node.addToSceneDirtyList(Node.java:417)
+# javafx.scene.Node.impl_markDirty(Node.java:408)
+# javafx.scene.shape.Shape.impl_markDirty(Shape.java:930)
+# javafx.scene.Node.impl_geomChanged(Node.java:3758)
+# javafx.scene.text.Text.impl_geomChanged(Text.java:772)
+# javafx.scene.text.Text.needsTextLayout(Text.java:202)
+# javafx.scene.text.Text.needsFullTextLayout(Text.java:197)
+# javafx.scene.text.Text.access$400(Text.java:96)
+# javafx.scene.text.Text$4.invalidated(Text.java:396)
+# javafx.beans.property.StringPropertyBase.markInvalid(StringPropertyBase.java:109)
+# javafx.beans.property.StringPropertyBase.access$000(StringPropertyBase.java:49)
+# javafx.beans.property.StringPropertyBase$Listener.invalidated(StringPropertyBase.java:229)
+# com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:135)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.beans.binding.StringBinding.invalidate(StringBinding.java:171)
+# com.sun.javafx.binding.BindingHelperObserver.invalidated(BindingHelperObserver.java:51)
+# com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:339)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.scene.control.TextInputControl$TextProperty.fireValueChangedEvent(TextInputControl.java:1116)
+# javafx.scene.control.TextInputControl$TextProperty.markInvalid(TextInputControl.java:1120)
+# javafx.scene.control.TextInputControl$TextProperty.invalidate(TextInputControl.java:1060)
+# javafx.scene.control.TextInputControl$TextProperty.access$200(TextInputControl.java:1032)
+# javafx.scene.control.TextInputControl$1.invalidated(TextInputControl.java:130)
+# com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:135)
+# com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:80)
+# javafx.scene.control.TextField$TextFieldContent.insert(TextField.java:82)
+# javafx.scene.control.TextInputControl$TextProperty.doSet(TextInputControl.java:1129)
+# javafx.scene.control.TextInputControl$TextProperty.set(TextInputControl.java:1055)
+# javafx.scene.control.TextInputControl.setText(TextInputControl.java:279)
+# de.blauePandas.LMSClient.Client.Outputarea(Client.java:35)
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 19:20:19 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:65)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 20:31:10 
+# 
+# Exception type: java.util.NoSuchElementException: No line found
+#
+# java.util.Scanner.nextLine(Scanner.java:1540)
+# de.blauePandas.LMSClient.Client.startClient(Client.java:82)
+# de.blauePandas.LMSClient.Client.main(Client.java:138)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 20:31:50 
+# 
+# Exception type: java.util.NoSuchElementException: No line found
+#
+# java.util.Scanner.nextLine(Scanner.java:1540)
+# de.blauePandas.LMSClient.Client.startClient(Client.java:82)
+# de.blauePandas.LMSClient.Client.main(Client.java:138)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 20:32:41 
+# 
+# Exception type: java.util.NoSuchElementException: No line found
+#
+# java.util.Scanner.nextLine(Scanner.java:1540)
+# de.blauePandas.LMSClient.Client.startClient(Client.java:82)
+# de.blauePandas.LMSClient.Client.main(Client.java:138)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 20:34:59 
+# 
+# Exception type: java.util.NoSuchElementException
+#
+# java.util.Scanner.throwFor(Scanner.java:862)
+# java.util.Scanner.next(Scanner.java:1371)
+# de.blauePandas.LMSClient.Client.startClient(Client.java:82)
+# de.blauePandas.LMSClient.Client.main(Client.java:138)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 20:59:11 
+# 
+# Exception type: java.lang.RuntimeException: Unable to construct Application instance: class de.blauePandas.LMSClient.view.GUI
+#
+# com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:884)
+# com.sun.javafx.application.LauncherImpl.access$000(LauncherImpl.java:56)
+# com.sun.javafx.application.LauncherImpl$1.run(LauncherImpl.java:158)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 21:06:18 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.Client.main(Client.java:84)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 21:06:36 
+# 
+# Exception type: java.lang.RuntimeException: Exception in Application start method
+#
+# com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:894)
+# com.sun.javafx.application.LauncherImpl.access$000(LauncherImpl.java:56)
+# com.sun.javafx.application.LauncherImpl$1.run(LauncherImpl.java:158)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 21:31:37 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputThread.run(OutputThread.java:57)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 22:12:30 
+# 
+# Exception type: java.net.ConnectException: Connection refused: connect
+#
+# java.net.DualStackPlainSocketImpl.connect0(Native Method)
+# java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+# java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+# java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+# java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+# java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+# java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+# java.net.Socket.connect(Socket.java:589)
+# java.net.Socket.connect(Socket.java:538)
+# java.net.Socket.<init>(Socket.java:434)
+# java.net.Socket.<init>(Socket.java:211)
+# de.blauePandas.LMSClient.GUI.main(GUI.java:82)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.15 at 23:09:23 
+# 
+# Exception type: java.lang.NullPointerException
+#
+# de.blauePandas.LMSClient.control.OutputGUI.run(OutputGUI.java:56)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 00:18:28 
+# 
+# Exception type: java.net.ConnectException: Connection refused: connect
+#
+# java.net.DualStackPlainSocketImpl.connect0(Native Method)
+# java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+# java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+# java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+# java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+# java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+# java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+# java.net.Socket.connect(Socket.java:589)
+# java.net.Socket.connect(Socket.java:538)
+# java.net.Socket.<init>(Socket.java:434)
+# java.net.Socket.<init>(Socket.java:211)
+# de.blauePandas.LMSClient.GUI.main(GUI.java:121)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 10:28:33 
+# 
+# Exception type: java.net.ConnectException: Connection refused: connect
+#
+# java.net.DualStackPlainSocketImpl.connect0(Native Method)
+# java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+# java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+# java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+# java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+# java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+# java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+# java.net.Socket.connect(Socket.java:589)
+# java.net.Socket.connect(Socket.java:538)
+# java.net.Socket.<init>(Socket.java:434)
+# java.net.Socket.<init>(Socket.java:211)
+# de.blauePandas.LMSClient.GUI.main(GUI.java:138)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+

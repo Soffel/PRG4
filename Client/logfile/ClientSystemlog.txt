@@ -1,0 +1,154 @@
+2014.07.15 at 14:43:47  >> Client started successfully
+2014.07.15 at 14:43:55  >> hi server
+2014.07.15 at 14:44:03  >> echo hi server
+2014.07.15 at 15:04:00  >> Client started successfully
+2014.07.15 at 15:05:03  >> Client started successfully
+2014.07.15 at 15:05:58  >> Client started successfully
+2014.07.15 at 15:10:51  >> Client started successfully
+2014.07.15 at 15:12:03  >> Client started successfully
+2014.07.15 at 15:15:12  >> Client started successfully
+2014.07.15 at 15:16:04  >> Client started successfully
+2014.07.15 at 15:17:44  >> Client started successfully
+2014.07.15 at 15:19:11  >> Client started successfully
+2014.07.15 at 15:19:26  >> Client started successfully
+2014.07.15 at 15:26:03  >> Client started successfully
+2014.07.15 at 15:26:40  >> Client started successfully
+2014.07.15 at 15:28:31  >> Client started successfully
+2014.07.15 at 15:28:50  >> Client started successfully
+2014.07.15 at 17:09:59  >> Client started successfully
+2014.07.15 at 17:10:39  >> Client started successfully
+2014.07.15 at 17:22:00  >> Client started successfully
+2014.07.15 at 17:23:32  >> Client started successfully
+2014.07.15 at 17:26:21  >> Client started successfully
+2014.07.15 at 17:27:20  >> Client started successfully
+2014.07.15 at 17:35:26  >> Client started successfully
+2014.07.15 at 17:57:06  >> Client started successfully
+2014.07.15 at 17:57:30  >> Client started successfully
+2014.07.15 at 17:57:51  >> Client started successfully
+2014.07.15 at 17:59:44  >> Client started successfully
+2014.07.15 at 18:00:26  >> Client started successfully
+2014.07.15 at 18:01:15  >> Client started successfully
+2014.07.15 at 18:01:34  >> Client started successfully
+2014.07.15 at 18:03:31  >> Client started successfully
+2014.07.15 at 18:06:19  >> Client started successfully
+2014.07.15 at 18:07:11  >> Client started successfully
+2014.07.15 at 18:07:48  >> Client started successfully
+2014.07.15 at 18:11:27  >> Client started successfully
+2014.07.15 at 18:13:43  >> Client started successfully
+2014.07.15 at 18:13:54  >> Client started successfully
+2014.07.15 at 18:23:07  >> Client started successfully
+2014.07.15 at 18:23:23  >> Client started successfully
+2014.07.15 at 18:23:31  >> echo hallo
+2014.07.15 at 18:33:09  >> Client started successfully
+2014.07.15 at 18:33:34  >> Client started successfully
+2014.07.15 at 18:34:44  >> Client started successfully
+2014.07.15 at 18:38:57  >> Client started successfully
+2014.07.15 at 18:40:12  >> Client started successfully
+2014.07.15 at 18:41:14  >> Client started successfully
+2014.07.15 at 18:41:27  >> Client started successfully
+2014.07.15 at 18:41:52  >> Client started successfully
+2014.07.15 at 18:42:43  >> Client started successfully
+2014.07.15 at 18:43:04  >> Client started successfully
+2014.07.15 at 18:43:12  >> echo hallo server
+2014.07.15 at 18:44:23  >> Client started successfully
+2014.07.15 at 18:46:22  >> Client started successfully
+2014.07.15 at 18:46:41  >> echo hallo server
+2014.07.15 at 18:49:35  >> Client started successfully
+2014.07.15 at 18:51:12  >> Client started successfully
+2014.07.15 at 18:54:23  >> Client started successfully
+2014.07.15 at 18:56:07  >> Client started successfully
+2014.07.15 at 19:02:46  >> Client started successfully
+2014.07.15 at 19:02:56  >> echo Jana ist toll
+2014.07.15 at 19:05:00  >> Client started successfully
+2014.07.15 at 19:05:09  >> echo hallo server
+2014.07.15 at 19:09:09  >> Client started successfully
+2014.07.15 at 19:10:23  >> Client started successfully
+2014.07.15 at 19:11:03  >> echo hh
+2014.07.15 at 19:16:34  >> Client started successfully
+2014.07.15 at 19:16:48  >> echo hallo server
+2014.07.15 at 19:20:19  >> Client started successfully
+2014.07.15 at 19:47:55  >> Client started successfully
+2014.07.15 at 19:48:17  >> Client started successfully
+2014.07.15 at 19:50:57  >> Client started successfully
+2014.07.15 at 19:52:52  >> Client started successfully
+2014.07.15 at 19:53:14  >> Client started successfully
+2014.07.15 at 19:54:03  >> Client started successfully
+2014.07.15 at 20:00:17  >> Client started successfully
+2014.07.15 at 20:00:46  >> Client started successfully
+2014.07.15 at 20:11:17  >> Client started successfully
+2014.07.15 at 20:11:46  >> Client started successfully
+2014.07.15 at 20:28:35  >> Client started successfully
+2014.07.15 at 20:29:47  >> Client started successfully
+2014.07.15 at 20:30:06  >> echo hallo
+2014.07.15 at 20:30:20  >> echo hallo
+2014.07.15 at 20:30:33  >> echo hallo
+2014.07.15 at 20:30:38  >> g
+2014.07.15 at 20:31:14  >> Client started successfully
+2014.07.15 at 20:31:25  >> g
+2014.07.15 at 20:32:09  >> Client started successfully
+2014.07.15 at 20:32:13  >> k
+2014.07.15 at 20:32:48  >> Client started successfully
+2014.07.15 at 20:32:57  >> hi
+2014.07.15 at 20:33:00  >> hi
+2014.07.15 at 20:33:03  >> echo
+2014.07.15 at 20:33:03  >> hi
+2014.07.15 at 20:35:08  >> Client started successfully
+2014.07.15 at 20:35:13  >> 
+2014.07.15 at 20:35:18  >> hi
+2014.07.15 at 20:35:21  >> echo hi
+2014.07.15 at 20:50:38  >> Client started successfully
+2014.07.15 at 20:50:45  >> echo hallo server
+2014.07.15 at 20:55:05  >> Client started successfully
+2014.07.15 at 20:55:53  >> Client started successfully
+2014.07.15 at 20:58:31  >> Client started successfully
+2014.07.15 at 20:59:11  >> Client started successfully
+2014.07.15 at 21:00:54  >> Client started successfully
+2014.07.15 at 21:01:07  >> Client started successfully
+2014.07.15 at 21:01:27  >> Client started successfully
+2014.07.15 at 21:01:58  >> Client started successfully
+2014.07.15 at 21:03:10  >> Client started successfully
+2014.07.15 at 21:03:17  >> j
+2014.07.15 at 21:03:35  >> Client started successfully
+2014.07.15 at 21:04:16  >> Client started successfully
+2014.07.15 at 21:05:49  >> Client started successfully
+2014.07.15 at 21:06:35  >> Client started successfully
+2014.07.15 at 21:08:00  >> Client started successfully
+2014.07.15 at 21:09:08  >> Client started successfully
+2014.07.15 at 21:09:39  >> Client started successfully
+2014.07.15 at 21:10:21  >> Client started successfully
+2014.07.15 at 21:10:33  >> Client started successfully
+2014.07.15 at 21:10:46  >> Client started successfully
+2014.07.15 at 21:17:19  >> Client started successfully
+2014.07.15 at 21:18:46  >> Client started successfully
+2014.07.15 at 21:19:04  >> Client started successfully
+2014.07.15 at 21:20:47  >> Client started successfully
+2014.07.15 at 21:20:55  >> Client started successfully
+2014.07.15 at 21:21:09  >> Client started successfully
+2014.07.15 at 21:21:25  >> Client started successfully
+2014.07.15 at 21:23:02  >> Client started successfully
+2014.07.15 at 21:25:37  >> Client started successfully
+2014.07.15 at 21:27:14  >> Client started successfully
+2014.07.15 at 21:31:37  >> Client started successfully
+2014.07.15 at 21:46:26  >> Client started successfully
+2014.07.15 at 21:52:10  >> Client started successfully
+<<pool-1-thread-3>>  Successfully Serverconnection
+<<pool-1-thread-3>>  Successfully Serverconnection
+Hallo 
+Hallo 
+Hallo 
+Hallo 
+Hallo 
+<<pool-1-thread-2>>  Successfully Serverconnection
+HAllo 
+2014.07.16 at 00:21:08  >> Client started successfully
+2014.07.16 at 00:21:35  >> echo hallo
+2014.07.16 at 00:22:05  >> Client started successfully
+2014.07.16 at 00:22:14  >>  echo hallo
+2014.07.16 at 00:22:20  >> echo Hallo
+2014.07.16 at 00:22:28  >> Client started successfully
+2014.07.16 at 00:22:32  >> echo hallo
+2014.07.16 at 00:22:50  >> Client started successfully
+2014.07.16 at 00:23:02  >> echo hallo
+2014.07.16 at 00:23:12  >> Client started successfully
+2014.07.16 at 00:23:16  >> echo Hallo
+2014.07.16 at 00:23:21  >> echo wie gehts?

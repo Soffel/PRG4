@@ -1,5 +1,4 @@
 package de.blauePandas.LMSClient.control;
-
 import de.blauePandas.LMSClient.Client;
 
 import java.io.BufferedReader;
@@ -20,6 +19,7 @@ public class OutputThread implements Runnable
     public OutputThread(Socket _client)
     {
         this.client = _client;
+
     }
 
     @Override
@@ -53,13 +53,15 @@ public class OutputThread implements Runnable
                     }
 
                     System.out.print("   " + output+"\n>> ");
+
+
                 }
             }
         }
         catch(Exception e)
         {
-            System.out.println("\n    Lost connection to server! \n" +
-                               "    Client is terminated.");
+            System.out.println("\n    Lost connection to server! \n" +
+                    "    Client is terminated.");
 
             TextFileWriter.writeError(e);
         }
@@ -77,13 +79,13 @@ public class OutputThread implements Runnable
                     input.close();
                 }
 
-                Client.stop();
+                Client.stopClient();
             }
             catch (Exception e)
             {
                 TextFileWriter.writeError(e);
                 System.out.println("   An error has Occurred!\n"+
-                                   "   for more info visit the Error Log!");
+                        "   for more info visit the Error Log!");
             }
         }
     }
