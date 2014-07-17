@@ -1,7 +1,9 @@
 package de.blauePandas.LMSServer.control;
 
 import de.blauePandas.LMSServer.control.commands.EchoCommand;
+import de.blauePandas.LMSServer.control.commands.NewCommand;
 import de.blauePandas.LMSServer.control.commands.StopCommand;
+import de.blauePandas.LMSServer.core.ConnectionPool;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,7 +22,7 @@ public class ClientThread implements Runnable
     private Socket client               = null;
     private static boolean clientStop   = false;
     public static ConsoleControl ConsoleControl = null;
-    //public static ConnectionPool pool = null;
+    private static ConnectionPool pool = null;
 
     /* übergabe des Clienten */
     public ClientThread(Socket _client)
@@ -34,6 +36,10 @@ public class ClientThread implements Runnable
         clientStop = true;
     }
 
+    public static ConnectionPool getPool()
+    {
+        return pool;
+    }
 
     @Override
     public void run()
@@ -42,10 +48,10 @@ public class ClientThread implements Runnable
         BufferedReader  reader  = null;
 
         ConsoleControl  = new ConsoleControl();
-        //pool = new ConnectionPool("localhost/prgjava","root","");
+        pool = new ConnectionPool("localhost/prgjava","root","");
 
         ConsoleControl.addCmd(new EchoCommand());
-        //ConsoleControl.addCmd(new LoginCommand());
+        ConsoleControl.addCmd(new NewCommand());
         ConsoleControl.addCmd(new StopCommand()); //todo sobald rechte verwaltung steht entfernen
 
         try

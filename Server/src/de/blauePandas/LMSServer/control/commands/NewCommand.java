@@ -1,5 +1,8 @@
 package de.blauePandas.LMSServer.control.commands;
 
+import de.blauePandas.LMSServer.core.dao.ItemDAO;
+import de.blauePandas.LMSServer.model.Item;
+
 /**
  * Created with IntelliJ IDEA.
  * Team: blaue Pandas
@@ -29,10 +32,12 @@ public class NewCommand implements ConsoleCommandInterface
     @Override
     public String execute(String[] _args, int _rights)
     {
-        if(this.getRight()<= _rights)
-        {
-            //todo wait for newitem,yard,shelf,person - functions
-        }
+
+    Item test = new Item(11,"testitem",100,true,10);
+        ItemDAO dao = new ItemDAO();
+
+        dao.insert(test);
+
         return "You don't have the permissions to do this";
     }
 }

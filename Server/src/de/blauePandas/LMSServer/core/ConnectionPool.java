@@ -41,7 +41,7 @@ public class ConnectionPool
 
     public Connection getConnection()
     {
-        Connection connection;
+        Connection connection = null;
 
         for (int index = 0; index < listOfConnections.size(); index++)
         {

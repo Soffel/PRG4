@@ -1,6 +1,11 @@
 package de.blauePandas.LMSServer.core.dao;
 
+import de.blauePandas.LMSServer.control.ClientThread;
 import de.blauePandas.LMSServer.model.Item;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,82 +16,167 @@ import de.blauePandas.LMSServer.model.Item;
 
 public class ItemDAO implements DAOInterface<Item>
 {
+    private static final String ID      = "item_id";
+    private static final String NAME    = "item_name";
+    private static final String WEIGHT  = "item_weight";
+    private static final String DATE    = "has_expiration_date";
+    private static final String NUMBER  = "item_number";
+
+
+
     @Override
     public boolean insert(Item _t)
     {
 
-        return false;
-    }
-
-    @Override
-    public Item select(Item _t)
-    {
-   /*     Connection conn = null;
+        Connection conn = null;
+        Item back = null;
 
         int andCount = 0;
         int stateCount = 1;
 
         try
         {
-          //  conn = ClientThread.pool.getConnection();
+            conn = ClientThread.getPool().getConnection();
+
+            String insert = " insert into item values (?, ?, ?, ?, ?)";
+
+            PreparedStatement preStatement = conn.prepareStatement(insert);
+
+            preStatement.setInt     (1, _t.getId());
+            preStatement.setString  (2, _t.getName());
+            preStatement.setInt     (3, _t.getWeight());
+            preStatement.setBoolean (4, _t.getHasDate());
+            preStatement.setInt     (5, _t.getNumber());
+
+            preStatement.execute();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+            return false;
+        }
+        finally
+        {
+            if(conn != null)
+                ClientThread.getPool().closeConnection(conn);
+        }
+        return true;
+    }
+
+    @Override
+    public Item select(Item _t)
+    {
+        Connection conn = null;
+        Item back = null;
+
+        int andCount = 0;
+        int stateCount = 1;
+
+        try
+        {
+            conn = ClientThread.getPool().getConnection();
             String select = " select * from item where ";
 
             if(_t.getId() != 0)
             {
-                select += " item_id = (?) ";
+                select += ID + " = (?) ";
                 andCount++;
             }
 
             if(!_t.getName().equals("*"))
             {
                 if(andCount > 0)
-                    select += " and ";
+                    select += "and ";
 
-                select += " item_name = (?) ";
+                select += NAME +" = (?) ";
                 andCount++;
             }
 
             if(_t.getHasDate())
             {
                 if(andCount > 0)
-                    select += " and ";
+                    select += "and ";
 
-                select += " has_expiration_date = (?) ";
+                select += DATE + " = (?) ";
                 andCount++;
             }
 
             if(_t.getWeight() != 0)
             {
                 if(andCount > 0)
-                    select += " and ";
+                    select += "and ";
 
-                select += " item_weight = (?) ";
+                select += WEIGHT + " = (?) ";
                 andCount++;
             }
 
+            if(_t.getNumber() != 0)
+            {
+                if(andCount > 0)
+                    select += "and ";
+
+                select += NUMBER + " = (?) ";
+                andCount++;
+
+            }
+
+            System.out.println(select);
             PreparedStatement preStatement = conn.prepareStatement(select);
 
             if(_t.getId() != 0)
+            {
                 preStatement.setInt(stateCount, _t.getId());
+                stateCount++;
+            }
+
+            if(!_t.getName().equals("*"))
+            {
+                preStatement.setString(stateCount, _t.getName());
+                stateCount++;
+            }
+
+            if(_t.getHasDate())
+            {
+                preStatement.setBoolean(stateCount, _t.getHasDate());
+                stateCount++;
+            }
+
+            if(_t.getWeight() != 0)
+            {
+                preStatement.setInt(stateCount, _t.getWeight());
+                stateCount++;
+            }
+
+            if(_t.getNumber() != 0)
+            {
+                preStatement.setInt(stateCount, _t.getNumber());
+
+            }
 
             ResultSet result = preStatement.executeQuery();
 
             while(result.next())
             {
-                System.out.println("Loan Type: " + result.getString("loan_type"));
+                back = new Item(result.getInt(ID),
+                                result.getString(NAME),
+                                result.getInt(WEIGHT),
+                                result.getBoolean(DATE),
+                                result.getInt(NUMBER));
             }
+
         }
         catch(Exception e)
         {
-            // Fehler ausgabe
+            e.printStackTrace();
         }
         finally
         {
-           // if(conn != null)
-        //        ClientThread.pool.closeConnection(conn);
+            if(conn != null)
+                ClientThread.getPool().closeConnection(conn);
 
-        }*/
-        return null;
+        }
+
+        return back;
     }
 
     @Override
@@ -98,6 +188,11 @@ public class ItemDAO implements DAOInterface<Item>
     @Override
     public boolean delete(Item _t)
     {
+        return false;
+    }
+
+    @Override
+    public boolean exist(Item _t) {
         return false;
     }
 }

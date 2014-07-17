@@ -939,3 +939,28 @@
 # 
 ################################################################################
 
+################################################################################
+# 2014.07.16 at 19:56:43 
+# 
+# Exception type: java.net.ConnectException: Connection refused: connect
+#
+# java.net.DualStackPlainSocketImpl.connect0(Native Method)
+# java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+# java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+# java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+# java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+# java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+# java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+# java.net.Socket.connect(Socket.java:589)
+# java.net.Socket.connect(Socket.java:538)
+# java.net.Socket.<init>(Socket.java:434)
+# java.net.Socket.<init>(Socket.java:211)
+# de.blauePandas.LMSClient.GUI.main(GUI.java:267)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+

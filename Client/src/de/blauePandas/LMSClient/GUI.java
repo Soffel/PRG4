@@ -90,7 +90,9 @@ public class GUI extends Application
                 @Override
                 public void handle(ActionEvent actionEvent)
                 {
+
                     String inputStream = inputarea.getText(); //hohlen des Inputs aus dem Eingabefeld
+                    inputarea.setText("");
 
                     if(!inputStream.isEmpty())// kontrolle ob etwas im Eingabefeld stand
                     {
@@ -99,6 +101,8 @@ public class GUI extends Application
 
                         writer.write(inputStream + "\n"); //übergabe an server
                         writer.flush();//abschicken
+
+
 
                         KEY = 1;//rücksetzen des KEY-wertes
 
@@ -160,6 +164,7 @@ public class GUI extends Application
                     if(keyEvent.getCode() == KeyCode.valueOf("ENTER"))
                     {
                         String inputStream = inputarea.getText();
+                        inputarea.setText("");
 
                         if(!inputStream.isEmpty())
                         {

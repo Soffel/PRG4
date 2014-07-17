@@ -4191,3 +4191,351 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 # 
 ################################################################################
 
+################################################################################
+# 2014.07.16 at 18:52:10 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:63)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 19:24:56 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:63)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 19:26:04 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:63)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 19:26:31 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:63)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 19:27:15 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:63)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 19:27:52 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:63)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 19:45:45 
+# 
+# Exception type: java.net.BindException: Address already in use: JVM_Bind
+#
+# java.net.DualStackPlainSocketImpl.bind0(Native Method)
+# java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+# java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+# java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+# java.net.ServerSocket.bind(ServerSocket.java:375)
+# java.net.ServerSocket.<init>(ServerSocket.java:237)
+# java.net.ServerSocket.<init>(ServerSocket.java:128)
+# de.blauePandas.LMSServer.Server.main(Server.java:50)
+# sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+# sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+# sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+# java.lang.reflect.Method.invoke(Method.java:483)
+# com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 19:48:46 
+# 
+# Exception type: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+#
+# java.net.URLClassLoader$1.run(URLClassLoader.java:372)
+# java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+# java.security.AccessController.doPrivileged(Native Method)
+# java.net.URLClassLoader.findClass(URLClassLoader.java:360)
+# java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+# sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+# java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+# java.lang.Class.forName0(Native Method)
+# java.lang.Class.forName(Class.java:259)
+# de.blauePandas.LMSServer.core.ConnectionPool.getConnection(ConnectionPool.java:71)
+# de.blauePandas.LMSServer.core.dao.ItemDAO.select(ItemDAO.java:36)
+# de.blauePandas.LMSServer.control.commands.NewCommand.execute(NewCommand.java:41)
+# de.blauePandas.LMSServer.control.ConsoleControl.performCmd(ConsoleControl.java:78)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:81)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 19:50:52 
+# 
+# Exception type: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+#
+# java.net.URLClassLoader$1.run(URLClassLoader.java:372)
+# java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+# java.security.AccessController.doPrivileged(Native Method)
+# java.net.URLClassLoader.findClass(URLClassLoader.java:360)
+# java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+# sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+# java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+# java.lang.Class.forName0(Native Method)
+# java.lang.Class.forName(Class.java:259)
+# de.blauePandas.LMSServer.core.ConnectionPool.getConnection(ConnectionPool.java:71)
+# de.blauePandas.LMSServer.core.dao.ItemDAO.select(ItemDAO.java:36)
+# de.blauePandas.LMSServer.control.commands.NewCommand.execute(NewCommand.java:41)
+# de.blauePandas.LMSServer.control.ConsoleControl.performCmd(ConsoleControl.java:78)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:81)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 19:54:29 
+# 
+# Exception type: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+#
+# java.net.URLClassLoader$1.run(URLClassLoader.java:372)
+# java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+# java.security.AccessController.doPrivileged(Native Method)
+# java.net.URLClassLoader.findClass(URLClassLoader.java:360)
+# java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+# sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+# java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+# java.lang.Class.forName0(Native Method)
+# java.lang.Class.forName(Class.java:259)
+# de.blauePandas.LMSServer.core.ConnectionPool.getConnection(ConnectionPool.java:71)
+# de.blauePandas.LMSServer.core.dao.ItemDAO.select(ItemDAO.java:36)
+# de.blauePandas.LMSServer.control.commands.NewCommand.execute(NewCommand.java:41)
+# de.blauePandas.LMSServer.control.ConsoleControl.performCmd(ConsoleControl.java:78)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:81)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 20:07:41 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:68)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 20:09:56 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:68)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 20:10:00 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:68)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 20:10:02 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:68)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 21:21:18 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:68)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+
+################################################################################
+# 2014.07.16 at 21:29:33 
+# 
+# Exception type: java.net.SocketException: Connection reset
+#
+# java.net.SocketInputStream.read(SocketInputStream.java:189)
+# java.net.SocketInputStream.read(SocketInputStream.java:121)
+# sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+# sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+# sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+# java.io.InputStreamReader.read(InputStreamReader.java:184)
+# java.io.BufferedReader.fill(BufferedReader.java:161)
+# java.io.BufferedReader.readLine(BufferedReader.java:324)
+# java.io.BufferedReader.readLine(BufferedReader.java:389)
+# de.blauePandas.LMSServer.control.ClientThread.run(ClientThread.java:68)
+# java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+# java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+# java.lang.Thread.run(Thread.java:745)
+# 
+################################################################################
+

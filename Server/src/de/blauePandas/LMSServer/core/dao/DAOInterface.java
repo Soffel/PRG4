@@ -13,5 +13,6 @@ public interface DAOInterface <T>
     public T       select(T _t);
     public boolean update(T _t);
     public boolean delete(T _t);
+    public boolean exist (T _t);
 }
 
