@@ -190,4 +190,9 @@ public class ShelfDAO implements DAOInterface<Shelf>
     {
         return false;
     }
+
+    @Override
+    public boolean exist(Shelf _t) {
+        return false;
+    }
 }

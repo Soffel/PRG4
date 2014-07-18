@@ -187,4 +187,9 @@ public class PersonDAO implements DAOInterface<Person>
     {
         return false;
     }
+
+    @Override
+    public boolean exist(Person _t) {
+        return false;
+    }
 }

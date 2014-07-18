@@ -218,4 +218,9 @@ public class YardDAO implements DAOInterface<Yard>
     {
         return false;
     }
+
+    @Override
+    public boolean exist(Yard _t) {
+        return false;
+    }
 }
