@@ -163,7 +163,6 @@ public class PersonDAO implements DAOInterface<Person>
                                   result.getString(LOGINNAME),
                                   result.getString(LOGINPSW));
             }
-
         }
         catch(Exception e)
         {
@@ -173,9 +172,7 @@ public class PersonDAO implements DAOInterface<Person>
         {
             if(conn != null)
                 ClientThread.getPool().closeConnection(conn);
-
         }
-
         return back;
     }
 

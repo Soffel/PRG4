@@ -203,9 +203,7 @@ public class YardDAO implements DAOInterface<Yard>
         {
             if(conn != null)
                 ClientThread.getPool().closeConnection(conn);
-
         }
-
         return back;
     }
 

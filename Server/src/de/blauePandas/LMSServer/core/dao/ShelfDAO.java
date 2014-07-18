@@ -166,7 +166,6 @@ public class ShelfDAO implements DAOInterface<Shelf>
                                  result.getInt(MAXLOAD),
                                  result.getInt(FREELOAD));
             }
-
         }
         catch(Exception e)
         {
@@ -178,7 +177,6 @@ public class ShelfDAO implements DAOInterface<Shelf>
                 ClientThread.getPool().closeConnection(conn);
 
         }
-
         return null;
     }
     @Override
