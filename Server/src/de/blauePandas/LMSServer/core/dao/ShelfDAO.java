@@ -147,13 +147,13 @@ public class ShelfDAO implements DAOInterface<Shelf>
             if(_t.getMaxLoad() != 0)
             {
                 preStatement.setInt(stateCount, _t.getMaxLoad());
-
+                stateCount++;
             }
 
             if(_t.getFreeLoad() != 0)
             {
                 preStatement.setInt(stateCount, _t.getFreeLoad());
-
+                stateCount++;
             }
 
             ResultSet result = preStatement.executeQuery();

@@ -166,13 +166,13 @@ public class YardDAO implements DAOInterface<Yard>
             if(_t.getPosHori() != 0)
             {
                 preStatement.setInt(stateCount, _t.getPosHori());
-
+                stateCount++;
             }
 
             if(_t.getPosVerti() != 0)
             {
                 preStatement.setInt(stateCount, _t.getPosVerti());
-
+                stateCount++;
             }
 
             if(_t.getoccupied())

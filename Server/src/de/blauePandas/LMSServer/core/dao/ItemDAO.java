@@ -150,7 +150,7 @@ public class ItemDAO implements DAOInterface<Item>
             if(_t.getNumber() != 0)
             {
                 preStatement.setInt(stateCount, _t.getNumber());
-
+                stateCount++;
             }
 
             ResultSet result = preStatement.executeQuery();
@@ -163,7 +163,6 @@ public class ItemDAO implements DAOInterface<Item>
                                 result.getBoolean(DATE),
                                 result.getInt(NUMBER));
             }
-
         }
         catch(Exception e)
         {
@@ -173,9 +172,7 @@ public class ItemDAO implements DAOInterface<Item>
         {
             if(conn != null)
                 ClientThread.getPool().closeConnection(conn);
-
         }
-
         return back;
     }
 

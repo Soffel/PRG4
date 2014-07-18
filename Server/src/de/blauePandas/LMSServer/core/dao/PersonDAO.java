@@ -150,7 +150,7 @@ public class PersonDAO implements DAOInterface<Person>
             if(_t.getloginPsw().equals("*"))
             {
                 preStatement.setString(stateCount, _t.getloginPsw());
-
+                stateCount++;
             }
 
             ResultSet result = preStatement.executeQuery();
