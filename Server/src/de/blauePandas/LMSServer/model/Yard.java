@@ -13,7 +13,7 @@ public class Yard
     private int shelfId;
     private int numberOfItems;
     private int posHori;
-    private String posVerti;
+    private int posVerti;
     private boolean occupied;
 
 
@@ -42,7 +42,7 @@ public class Yard
 
     public int getPosHori() { return this.posHori; }
 
-    public String getPosVerti() { return this.posVerti; }
+    public int getPosVerti() { return this.posVerti; }
 
     public boolean getoccupied() { return this.occupied; }
 
@@ -72,7 +72,7 @@ public class Yard
 
     public void setPosHori(int _posHori) { this.posHori = _posHori; }
 
-    public void setPosVerti(String _posVerti) { this.posVerti = _posVerti; }
+    public void setPosVerti(int _posVerti) { this.posVerti = _posVerti; }
 
     public void setOccupied(boolean _occupied) { this.occupied = _occupied; }
 
