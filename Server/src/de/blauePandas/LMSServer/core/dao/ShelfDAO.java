@@ -19,12 +19,18 @@ import java.sql.ResultSet;
 
 public class ShelfDAO implements DAOInterface<Shelf>
 {
+    private static final String ID          = "shelf_id";
+    private static final String NAME        = "shelf_name";
+    private static final String FREEYARD    = "shelf_nfree_yard";
+    private static final String MAXLOAD     = "shelf_max_load";
+    private static final String FREELOAD    = "shelf_free_load";
+
     @Override
     public boolean insert(Shelf _t)
     {
 
         Connection conn = null;
-        Item back = null;
+        Shelf back = null;
 
         int andCount = 0;
         int stateCount = 1;
@@ -39,9 +45,9 @@ public class ShelfDAO implements DAOInterface<Shelf>
 
             preStatement.setInt     (1, _t.getId());
             preStatement.setString  (2, _t.getName());
-            preStatement.setInt     (3, _t.getfreeYard());
-            preStatement.setInt     (4, _t.getmaxLoad());
-            preStatement.setInt     (5, _t.getfreeLoad());
+            preStatement.setInt     (3, _t.getFreeYard());
+            preStatement.setInt     (4, _t.getMaxLoad());
+            preStatement.setInt     (5, _t.getFreeLoad());
 
             preStatement.execute();
         }
@@ -63,7 +69,7 @@ public class ShelfDAO implements DAOInterface<Shelf>
 
     {
         Connection conn = null;
-        Item back = null;
+        Shelf back = null;
 
         int andCount = 0;
         int stateCount = 1;
@@ -71,7 +77,7 @@ public class ShelfDAO implements DAOInterface<Shelf>
         try
         {
             conn = ClientThread.getPool().getConnection();
-            String select = " select * from person where ";
+            String select = " select * from shelf where ";
 
             if(_t.getId() != 0)
             {

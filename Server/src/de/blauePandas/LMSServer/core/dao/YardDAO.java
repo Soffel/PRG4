@@ -18,13 +18,13 @@ import java.sql.ResultSet;
 public class YardDAO implements DAOInterface<Yard>
 {
 
-    private int id;
-    private int itemId;
-    private int shelfId;
-    private int numberOfItems;
-    private int posHori;
-    private int posVerti;
-    private boolean occupied;
+    private static final String ID              = "yard_id";
+    private static final String ITEMID          = "yard_item_id";
+    private static final String SHELFID         = "yard_shelf_id";
+    private static final String NUMBEROFITEMS   = "yard_item_number";
+    private static final String POSHORI         = "yard_position_horizontally";
+    private static final String POSVERTI        = "yard_position_vertical";
+    private static final String OCCUPIED        = "yard_occupied";
 
     @Override
     public boolean insert(Yard _t)
@@ -32,7 +32,7 @@ public class YardDAO implements DAOInterface<Yard>
     {
 
         Connection conn = null;
-        Item back = null;
+        Yard back = null;
 
         int andCount = 0;
         int stateCount = 1;
@@ -72,7 +72,7 @@ public class YardDAO implements DAOInterface<Yard>
 
     {
         Connection conn = null;
-        Item back = null;
+        Yard back = null;
 
         int andCount = 0;
         int stateCount = 1;
@@ -185,12 +185,12 @@ public class YardDAO implements DAOInterface<Yard>
 
             while(result.next())
             {
-                back = new Item(result.getInt(ID),
+                back = new Yard(result.getInt(ID),
                                 result.getInt(ITEMID),
                                 result.getInt(SHELFID),
                                 result.getInt(NUMBEROFITEMS),
                                 result.getInt(POSHORI),
-                                result.getString(POSVERTI),
+                                result.getInt(POSVERTI),
                                 result.getBoolean(OCCUPIED));
             }
 
@@ -206,7 +206,7 @@ public class YardDAO implements DAOInterface<Yard>
 
         }
 
-        return null;
+        return back;
     }
 
     @Override

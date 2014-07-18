@@ -18,12 +18,18 @@ import java.sql.ResultSet;
 
 public class PersonDAO implements DAOInterface<Person>
 {
+    private static final String ID          = "user_id";
+    private static final String RIGHTS      = "user_rights";
+    private static final String NAME        = "user_name";
+    private static final String LOGINNAME   = "user_loginname";
+    private static final String LOGINPSW    = "user_loginpsw";
+
     @Override
     public boolean insert(Person _t)
     {
 
         Connection conn = null;
-        Item back = null;
+        Person back = null;
 
         int andCount = 0;
         int stateCount = 1;
@@ -61,7 +67,7 @@ public class PersonDAO implements DAOInterface<Person>
     public Person select(Person _t)
     {
         Connection conn = null;
-        Item back = null;
+        Person back = null;
 
         int andCount = 0;
         int stateCount = 1;
