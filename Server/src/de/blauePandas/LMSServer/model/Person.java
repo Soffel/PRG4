@@ -14,6 +14,32 @@ public class Person
     private String loginName;
     private String loginPsw;
 
+    public Person()
+    {
+        this.id = 0;
+        this.rights = 0;
+        this.name = "*";
+        this.loginName = "*";
+        this.loginPsw = "*";
+    }
+
+    public Person(Person _copy)
+    {
+        this.id = _copy.id;
+        this.rights = _copy.rights;
+        this.name = _copy.name;
+        this.loginName = _copy.loginName;
+        this.loginPsw = _copy.loginPsw;
+    }
+
+    public Person(int _id, int _rights, String _name, String _loginName, String _loginPsw)
+    {
+        this.id = _id;
+        this.rights = _rights;
+        this.name = _name;
+        this.loginName = _loginName;
+        this.loginPsw = _loginPsw;
+    }
 
     /**
      * getter
